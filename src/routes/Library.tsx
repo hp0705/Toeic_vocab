@@ -15,6 +15,7 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
   const [searchQuery, setSearchQuery] = useState(initialFilter && initialFilter !== 'weak' ? initialFilter : '');
   const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(100);
 
   const typeOptions: { id: string; label: string }[] = [
     { id: 'all', label: STRINGS.library.allTypes },
@@ -105,7 +106,7 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
         </div>
       ) : (
         <div className="space-y-2">
-          {filteredEntries.slice(0, 100).map((entry) => (
+          {filteredEntries.slice(0, visibleCount).map((entry) => (
             <div
               key={entry.id}
               onClick={() => setSelectedEntry(entry)}
@@ -130,9 +131,25 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
             </div>
           ))}
 
-          {filteredEntries.length > 100 && (
-            <div className="text-center text-xs text-text-muted py-2">
-              (Đang hiển thị 100 / {filteredEntries.length} mục. Hãy nhập từ khóa để tìm cụ thể hơn)
+          {filteredEntries.length > visibleCount && (
+            <div className="flex flex-col items-center gap-2 pt-2">
+              <span className="text-xs text-text-muted">
+                Đang hiển thị {visibleCount} / {filteredEntries.length} mục
+              </span>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setVisibleCount((prev) => Math.min(filteredEntries.length, prev + 100))}
+                  className="px-4 py-2 rounded-md bg-surface border border-border hover:bg-surface-2 text-xs font-semibold text-primary transition-colors cursor-pointer"
+                >
+                  Tải thêm +100 từ
+                </button>
+                <button
+                  onClick={() => setVisibleCount(filteredEntries.length)}
+                  className="px-4 py-2 rounded-md bg-primary-light border border-primary/30 text-xs font-semibold text-primary transition-colors cursor-pointer"
+                >
+                  Xem tất cả ({filteredEntries.length} từ)
+                </button>
+              </div>
             </div>
           )}
         </div>

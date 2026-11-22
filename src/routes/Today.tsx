@@ -49,6 +49,12 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
 
       {/* Main Study Action Card */}
       <div className="p-6 rounded-lg bg-surface border border-border shadow-card relative overflow-hidden">
+        <div className="flex items-center justify-between pb-3 mb-2 border-b border-border/40 text-xs">
+          <span className="font-semibold text-text-muted">Tổng kho từ vựng</span>
+          <span className="font-bold text-primary bg-primary-light px-2.5 py-0.5 rounded-full">
+            {allEntries.length} từ vựng (28 chủ đề)
+          </span>
+        </div>
         <div className="flex items-start justify-between">
           <div className="space-y-1">
             <span className="text-xs font-semibold uppercase tracking-wider text-text-muted">
@@ -59,7 +65,7 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
               <span className="text-sm font-normal text-text-muted ml-2">từ</span>
             </div>
             <div className="text-xs text-text-muted pt-1">
-              {STRINGS.today.estimatedTime(estimatedMins)}
+              {STRINGS.today.estimatedTime(estimatedMins)} (học giãn cách SRS)
             </div>
           </div>
 
