@@ -1,0 +1,203 @@
+import { useState, useEffect, useCallback } from 'react';
+import { db, defaultSettings, UserStreak } from './index';
+import { CardProgress, Entry, UserSettings } from '../types/vocab';
+import { schedule, createInitialCard, Grade } from '../srs/sm2';
+
+function getTodayDateString(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+export function useSettings() {
+  const [settings, setSettings] = useState<UserSettings>(defaultSettings);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const loadSettings = useCallback(async () => {
+    try {
+      const rec = await db.settings.get('user');
+      if (rec && rec.settings) {
+        setSettings({ ...defaultSettings, ...rec.settings });
+      } else {
+        await db.settings.put({ id: 'user', settings: defaultSettings });
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadSettings();
+  }, [loadSettings]);
+
+  const updateSettings = async (patch: Partial<UserSettings>) => {
+    const updated = { ...settings, ...patch };
+    setSettings(updated);
+    await db.settings.put({ id: 'user', settings: updated });
+  };
+
+  return { settings, updateSettings, isLoading };
+}
+
+export function useStreak() {
+  const [streak, setStreak] = useState<UserStreak>({
+    id: 'current',
+    count: 0,
+    lastStudiedDate: '',
+    freezeAvailable: true
+  });
+
+  const loadStreak = useCallback(async () => {
+    const s = await db.streak.get('current');
+    if (s) {
+      setStreak(s);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadStreak();
+  }, [loadStreak]);
+
+  const recordActivity = async () => {
+    const today = getTodayDateString();
+    const current = (await db.streak.get('current')) || {
+      id: 'current',
+      count: 0,
+      lastStudiedDate: '',
+      freezeAvailable: true
+    };
+
+    if (current.lastStudiedDate === today) {
+      return; // Already completed today
+    }
+
+    const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
+
+    let newCount = current.count;
+    if (current.lastStudiedDate === yesterdayStr) {
+      newCount += 1;
+    } else if (current.lastStudiedDate === '') {
+      newCount = 1;
+    } else {
+      // Missed a day: check streak freeze
+      if (current.freezeAvailable) {
+        newCount += 1;
+        current.freezeAvailable = false;
+      } else {
+        newCount = 1;
+      }
+    }
+
+    const updatedStreak: UserStreak = {
+      id: 'current',
+      count: newCount,
+      lastStudiedDate: today,
+      freezeAvailable: current.freezeAvailable
+    };
+
+    await db.streak.put(updatedStreak);
+    setStreak(updatedStreak);
+  };
+
+  const hasCompletedToday = streak.lastStudiedDate === getTodayDateString();
+
+  return { streak, hasCompletedToday, recordActivity };
+}
+
+export function useStats() {
+  const [stats, setStats] = useState({
+    total: 0,
+    newCount: 0,
+    learningCount: 0,
+    reviewCount: 0,
+    masteredCount: 0,
+    weakCount: 0
+  });
+
+  const refreshStats = useCallback(async () => {
+    const all = await db.progress.toArray();
+    let learning = 0;
+    let review = 0;
+    let mastered = 0;
+    let weak = 0;
+
+    for (const p of all) {
+      if (p.status === 'learning') learning++;
+      else if (p.status === 'review') review++;
+      else if (p.status === 'mastered') mastered++;
+      if (p.isWeak) weak++;
+    }
+
+    setStats({
+      total: all.length,
+      newCount: 0, // calculated relative to all entries in UI
+      learningCount: learning,
+      reviewCount: review,
+      masteredCount: mastered,
+      weakCount: weak
+    });
+  }, []);
+
+  useEffect(() => {
+    refreshStats();
+  }, [refreshStats]);
+
+  return { stats, refreshStats };
+}
+
+export function useStudyQueue(allEntries: Entry[]) {
+  const [queue, setQueue] = useState<Entry[]>([]);
+  const [progressMap, setProgressMap] = useState<Map<string, CardProgress>>(new Map());
+  const [isLoading, setIsLoading] = useState(true);
+  const { settings } = useSettings();
+  const { recordActivity } = useStreak();
+
+  const loadQueue = useCallback(async () => {
+    if (allEntries.length === 0) return;
+    setIsLoading(true);
+    try {
+      const now = Date.now();
+      const allProgress = await db.progress.toArray();
+      const pMap = new Map<string, CardProgress>(allProgress.map((p) => [p.entryId, p]));
+      setProgressMap(pMap);
+
+      // 1. Cards due for review (due <= now)
+      const dueCards = allProgress
+        .filter((p) => p.due <= now && (p.status === 'learning' || p.status === 'review' || p.status === 'mastered'))
+        .sort((a, b) => a.due - b.due)
+        .slice(0, settings.maxReviewsPerDay);
+
+      const dueEntryIds = new Set(dueCards.map((p) => p.entryId));
+      const dueEntries = allEntries.filter((e) => dueEntryIds.has(e.id));
+
+      // 2. New cards (no progress or status === 'new')
+      const newEntries = allEntries
+        .filter((e) => !pMap.has(e.id) || pMap.get(e.id)?.status === 'new')
+        .slice(0, settings.newCardsPerDay);
+
+      // Interleave due and new
+      const combined = [...dueEntries, ...newEntries];
+      setQueue(combined);
+    } finally {
+      setIsLoading(false);
+    }
+  }, [allEntries, settings.maxReviewsPerDay, settings.newCardsPerDay]);
+
+  useEffect(() => {
+    loadQueue();
+  }, [loadQueue]);
+
+  const submitGrade = async (entry: Entry, grade: Grade) => {
+    const now = Date.now();
+    const current = progressMap.get(entry.id) || createInitialCard(entry.id, now);
+    const updated = schedule(current, grade, now);
+
+    await db.progress.put(updated);
+    setProgressMap((prev) => new Map(prev).set(entry.id, updated));
+    await recordActivity();
+
+    return updated;
+  };
+
+  return { queue, progressMap, isLoading, reload: loadQueue, submitGrade };
+}

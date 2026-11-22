@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/knip@5/overview/config-schema.json",
+  "entry": ["src/main.tsx!", "scripts/parse-vocab.ts!", "scripts/validate.ts!"],
+  "project": ["src/**/*.{ts,tsx}!", "scripts/**/*.ts!"],
+  "ignore": ["dist/**"],
+  "rules": {
+    "types": "off"
+  }
+}
