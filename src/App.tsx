@@ -15,7 +15,14 @@ const entries = vocabData as Entry[];
 export const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<NavTab>('today');
   const [libraryFilter, setLibraryFilter] = useState<string | undefined>(undefined);
-  const { queue } = useStudyQueue(entries);
+  const {
+    queue,
+    progressMap,
+    isLoading,
+    studiedTodayCount,
+    addMoreNewCards,
+    submitGrade
+  } = useStudyQueue(entries);
 
   // Sync state with URL hash
   useEffect(() => {
@@ -63,6 +70,10 @@ export const App: React.FC = () => {
         {currentTab === 'today' && (
           <Today
             allEntries={entries}
+            queue={queue}
+            isLoading={isLoading}
+            studiedTodayCount={studiedTodayCount}
+            addMoreNewCards={addMoreNewCards}
             onStartStudy={() => handleSelectTab('study')}
             onOpenLibraryWithFilter={(filter) => {
               setLibraryFilter(filter);
@@ -74,13 +85,20 @@ export const App: React.FC = () => {
         {currentTab === 'study' && (
           <StudySession
             allEntries={entries}
+            queue={queue}
+            progressMap={progressMap}
+            submitGrade={submitGrade}
             onFinish={() => handleSelectTab('today')}
           />
         )}
 
         {currentTab === 'library' && (
           <Suspense fallback={<div className="p-8 text-center text-xs text-text-muted">Đang tải...</div>}>
-            <Library allEntries={entries} initialFilter={libraryFilter} />
+            <Library
+              allEntries={entries}
+              progressMap={progressMap}
+              initialFilter={libraryFilter}
+            />
           </Suspense>
         )}
 

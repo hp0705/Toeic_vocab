@@ -1,19 +1,25 @@
 import React, { useState, useMemo } from 'react';
-import { Entry, EntryType } from '../types/vocab';
+import { CardProgress, Entry, EntryType } from '../types/vocab';
 import { matchesQuery } from '../utils/search';
 import { STRINGS } from '../constants/strings';
 import { WordCard } from '../components/card/WordCard';
 import { SpeakButton } from '../components/ui/SpeakButton';
-import { Search, X, ChevronRight } from 'lucide-react';
+import { Search, X, ChevronRight, CheckCircle2, Bookmark, Flame, AlertCircle } from 'lucide-react';
 
 export interface LibraryProps {
   allEntries: Entry[];
+  progressMap?: Map<string, CardProgress>;
   initialFilter?: string;
 }
 
-export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) => {
-  const [searchQuery, setSearchQuery] = useState(initialFilter && initialFilter !== 'weak' ? initialFilter : '');
+export const Library: React.FC<LibraryProps> = ({ allEntries, progressMap, initialFilter }) => {
+  const [searchQuery, setSearchQuery] = useState(
+    initialFilter && initialFilter !== 'weak' ? initialFilter : ''
+  );
   const [selectedType, setSelectedType] = useState<string>('all');
+  const [selectedStatus, setSelectedStatus] = useState<string>(
+    initialFilter === 'weak' ? 'weak' : 'all'
+  );
   const [selectedEntry, setSelectedEntry] = useState<Entry | null>(null);
   const [visibleCount, setVisibleCount] = useState<number>(100);
 
@@ -31,14 +37,34 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
     { id: 'wordfamily', label: 'Họ từ (P5)' }
   ];
 
+  const statusOptions = [
+    { id: 'all', label: 'Tất cả trạng thái' },
+    { id: 'unstudied', label: 'Chưa học' },
+    { id: 'learning', label: 'Đang nhớ' },
+    { id: 'mastered', label: 'Đã thuộc' },
+    { id: 'weak', label: 'Cần ôn (Từ yếu)' }
+  ];
+
   const filteredEntries = useMemo(() => {
     return allEntries.filter((entry) => {
-      // Type match
+      // 1. Status filter
+      if (selectedStatus !== 'all') {
+        const p = progressMap?.get(entry.id);
+        const isStudied = p && p.status !== 'new';
+        if (selectedStatus === 'unstudied' && isStudied) return false;
+        if (selectedStatus === 'learning' && (!p || (p.status !== 'learning' && p.status !== 'review'))) {
+          return false;
+        }
+        if (selectedStatus === 'mastered' && (!p || p.status !== 'mastered')) return false;
+        if (selectedStatus === 'weak' && (!p || !p.isWeak)) return false;
+      }
+
+      // 2. Type match
       if (selectedType !== 'all' && entry.type !== (selectedType as EntryType)) {
         return false;
       }
 
-      // Search match
+      // 3. Search match
       if (searchQuery.trim()) {
         const matchesHeadword = matchesQuery(entry.headword, searchQuery);
         const matchesMeaning = matchesQuery(entry.meaningVi, searchQuery);
@@ -50,7 +76,52 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
 
       return true;
     });
-  }, [allEntries, selectedType, searchQuery]);
+  }, [allEntries, selectedType, selectedStatus, searchQuery, progressMap]);
+
+  const renderStatusBadge = (entry: Entry) => {
+    const p = progressMap?.get(entry.id);
+    if (!p || p.status === 'new') {
+      return (
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-surface-2 text-text-muted flex items-center gap-1 border border-border/50">
+          <span className="w-1.5 h-1.5 rounded-full bg-text-muted/40" />
+          Chưa học
+        </span>
+      );
+    }
+    if (p.isWeak) {
+      return (
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-bad-light text-bad flex items-center gap-1 border border-bad/30">
+          <AlertCircle size={11} />
+          Từ yếu
+        </span>
+      );
+    }
+    if (p.status === 'learning') {
+      return (
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-pos-adj-bg text-pos-adj flex items-center gap-1 border border-pos-adj/30">
+          <Flame size={11} />
+          Đang nhớ
+        </span>
+      );
+    }
+    if (p.status === 'review') {
+      return (
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-primary-light text-primary flex items-center gap-1 border border-primary/30">
+          <Bookmark size={11} />
+          Ôn tập
+        </span>
+      );
+    }
+    if (p.status === 'mastered') {
+      return (
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-ok-light text-ok flex items-center gap-1 border border-ok/30">
+          <CheckCircle2 size={11} />
+          Đã thuộc
+        </span>
+      );
+    }
+    return null;
+  };
 
   return (
     <div className="space-y-4 pb-24 pt-2 max-w-lg mx-auto px-4">
@@ -77,16 +148,33 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
         )}
       </div>
 
-      {/* Type Filter Chips (Horizontal Scroll) */}
+      {/* 1. Status Filter Pills */}
+      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar text-xs">
+        {statusOptions.map((st) => (
+          <button
+            key={st.id}
+            onClick={() => setSelectedStatus(st.id)}
+            className={`px-3 py-1.5 rounded-md font-semibold whitespace-nowrap transition-colors cursor-pointer ${
+              selectedStatus === st.id
+                ? 'bg-primary text-white shadow-sm'
+                : 'bg-surface border border-border text-text-muted hover:text-text'
+            }`}
+          >
+            {st.label}
+          </button>
+        ))}
+      </div>
+
+      {/* 2. Type Filter Chips */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar text-xs">
         {typeOptions.map((opt) => (
           <button
             key={opt.id}
             onClick={() => setSelectedType(opt.id)}
-            className={`px-3 py-1.5 rounded-full font-medium whitespace-nowrap transition-colors cursor-pointer ${
+            className={`px-2.5 py-1 rounded-full font-medium whitespace-nowrap transition-colors cursor-pointer ${
               selectedType === opt.id
-                ? 'bg-primary text-white shadow-sm'
-                : 'bg-surface border border-border text-text-muted hover:text-text'
+                ? 'bg-surface-2 text-text border border-primary font-bold'
+                : 'bg-surface/60 border border-border/70 text-text-muted hover:text-text'
             }`}
           >
             {opt.label}
@@ -113,13 +201,15 @@ export const Library: React.FC<LibraryProps> = ({ allEntries, initialFilter }) =
               className="p-3.5 rounded-md bg-surface border border-border/80 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer flex items-center justify-between gap-3"
             >
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2 mb-0.5">
+                <div className="flex flex-wrap items-center gap-2 mb-1">
                   <span className="text-sm font-bold text-text truncate">{entry.headword}</span>
                   {entry.pos?.[0] && (
                     <span className="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-surface-2 text-text-muted uppercase">
                       {entry.pos[0]}
                     </span>
                   )}
+                  {/* Status Mark (Chưa học / Đang nhớ / Đã thuộc / Từ yếu) */}
+                  {renderStatusBadge(entry)}
                 </div>
                 <div className="text-xs text-text-muted truncate">{entry.meaningVi}</div>
               </div>

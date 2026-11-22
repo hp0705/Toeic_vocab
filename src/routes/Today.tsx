@@ -1,6 +1,6 @@
 import React from 'react';
 import { Entry } from '../types/vocab';
-import { useStreak, useStudyQueue, useStats, useSettings } from '../db/hooks';
+import { useStreak, useStats, useSettings } from '../db/hooks';
 import { STRINGS } from '../constants/strings';
 import { Button } from '../components/ui/Button';
 import { ProgressRing } from '../components/ui/ProgressRing';
@@ -19,14 +19,25 @@ import {
 
 export interface TodayProps {
   allEntries: Entry[];
+  queue: Entry[];
+  isLoading: boolean;
+  studiedTodayCount: number;
+  addMoreNewCards: (count?: number) => Entry[];
   onStartStudy: () => void;
   onOpenLibraryWithFilter?: (filter: string) => void;
 }
 
-export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLibraryWithFilter }) => {
+export const Today: React.FC<TodayProps> = ({
+  allEntries,
+  queue,
+  isLoading,
+  studiedTodayCount,
+  addMoreNewCards,
+  onStartStudy,
+  onOpenLibraryWithFilter
+}) => {
   const { streak } = useStreak();
   const { settings } = useSettings();
-  const { queue, isLoading, addMoreNewCards } = useStudyQueue(allEntries);
   const { stats } = useStats(allEntries);
 
   const getGreeting = () => {
@@ -39,14 +50,12 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
   const dailyTarget = settings.newCardsPerDay || 15;
   const todayProgressPercent = Math.min(
     100,
-    Math.round((stats.studiedTodayCount / dailyTarget) * 100)
+    Math.round((studiedTodayCount / dailyTarget) * 100)
   );
 
-  const handleStudyMore = () => {
-    addMoreNewCards(5);
-    setTimeout(() => {
-      onStartStudy();
-    }, 100);
+  const handleStudyMore = (count: number) => {
+    addMoreNewCards(count);
+    onStartStudy();
   };
 
   const formatTime = (ts?: number) => {
@@ -91,7 +100,7 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
               Tiến độ mục tiêu hôm nay
             </span>
             <div className="text-3xl font-black text-text tracking-tight flex items-baseline gap-1.5">
-              <span>{stats.studiedTodayCount}</span>
+              <span>{studiedTodayCount}</span>
               <span className="text-sm font-normal text-text-muted">/ {dailyTarget} từ</span>
             </div>
             <div className="text-xs text-text-muted pt-0.5">
@@ -108,25 +117,54 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
           </ProgressRing>
         </div>
 
-        {/* CTA Button */}
-        <div>
+        {/* CTA Button & Study More Options */}
+        <div className="space-y-3">
           {queue.length > 0 ? (
             <Button size="lg" fullWidth onClick={onStartStudy} disabled={isLoading} className="text-base font-bold shadow-md">
               <BookOpen size={18} className="mr-2" />
               {STRINGS.today.startStudy} ({queue.length} từ)
             </Button>
           ) : (
-            <div className="space-y-2">
-              <div className="p-3 rounded-md bg-ok/10 border border-ok/20 flex items-center gap-2 text-ok text-xs font-semibold">
-                <CheckCircle2 size={18} className="shrink-0" />
-                <span>Bạn đã hoàn thành toàn bộ mục tiêu hôm nay!</span>
-              </div>
-              <Button size="md" variant="outline" fullWidth onClick={handleStudyMore} className="text-xs font-bold">
-                <PlusCircle size={15} className="mr-1.5" />
-                Học thêm 5 từ mới
-              </Button>
+            <div className="p-3 rounded-md bg-ok/10 border border-ok/20 flex items-center gap-2 text-ok text-xs font-semibold">
+              <CheckCircle2 size={18} className="shrink-0" />
+              <span>Bạn đã hoàn thành toàn bộ mục tiêu hôm nay!</span>
             </div>
           )}
+
+          {/* Option to choose 5, 10, or 15 words */}
+          <div className="pt-2 border-t border-border/40 space-y-2">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-text flex items-center gap-1.5">
+                <PlusCircle size={14} className="text-primary" />
+                Học thêm từ mới:
+              </span>
+              <span className="text-[11px] text-text-muted">Chọn số lượng từ bạn muốn học</span>
+            </div>
+
+            <div className="grid grid-cols-3 gap-2">
+              <button
+                type="button"
+                onClick={() => handleStudyMore(5)}
+                className="py-2 px-3 rounded-md bg-surface border border-primary/30 hover:bg-primary-light text-primary font-bold text-xs transition-colors cursor-pointer flex items-center justify-center gap-1"
+              >
+                +5 từ
+              </button>
+              <button
+                type="button"
+                onClick={() => handleStudyMore(10)}
+                className="py-2 px-3 rounded-md bg-surface border border-primary/30 hover:bg-primary-light text-primary font-bold text-xs transition-colors cursor-pointer flex items-center justify-center gap-1"
+              >
+                +10 từ
+              </button>
+              <button
+                type="button"
+                onClick={() => handleStudyMore(15)}
+                className="py-2 px-3 rounded-md bg-surface border border-primary/30 hover:bg-primary-light text-primary font-bold text-xs transition-colors cursor-pointer flex items-center justify-center gap-1"
+              >
+                +15 từ
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -150,7 +188,7 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
         </div>
       </div>
 
-      {/* RECENT STUDY HISTORY (Visual proof that history is saved!) */}
+      {/* RECENT STUDY HISTORY */}
       {stats.recentList.length > 0 && (
         <div className="p-4 rounded-lg bg-surface border border-border shadow-sm space-y-3">
           <div className="flex items-center justify-between text-xs">
@@ -177,7 +215,7 @@ export const Today: React.FC<TodayProps> = ({ allEntries, onStartStudy, onOpenLi
                 <div>
                   {item.progress.status === 'learning' && (
                     <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-pos-adj-bg text-pos-adj">
-                      Đang học
+                      Đang nhớ
                     </span>
                   )}
                   {item.progress.status === 'review' && (

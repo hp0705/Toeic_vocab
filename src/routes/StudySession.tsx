@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Entry } from '../types/vocab';
-import { useStudyQueue, useSettings } from '../db/hooks';
+import { CardProgress, Entry } from '../types/vocab';
+import { useSettings } from '../db/hooks';
 import { getNextIntervalEstimate, createInitialCard, Grade } from '../srs/sm2';
 import { WordCard } from '../components/card/WordCard';
 import { Button } from '../components/ui/Button';
@@ -11,22 +11,30 @@ import { X, CheckCircle2, RotateCcw, CloudCheck } from 'lucide-react';
 
 export interface StudySessionProps {
   allEntries: Entry[];
+  queue: Entry[];
+  progressMap: Map<string, CardProgress>;
+  submitGrade: (entry: Entry, grade: Grade) => Promise<CardProgress>;
   onFinish: () => void;
 }
 
-export const StudySession: React.FC<StudySessionProps> = ({ allEntries, onFinish }) => {
-  const { queue, progressMap, submitGrade, isLoading } = useStudyQueue(allEntries);
+export const StudySession: React.FC<StudySessionProps> = ({
+  allEntries: _allEntries,
+  queue,
+  progressMap,
+  submitGrade,
+  onFinish
+}) => {
   const { settings, updateSettings } = useSettings();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [sessionCards, setSessionCards] = useState<Entry[]>([]);
+  const [sessionCards, setSessionCards] = useState<Entry[]>(queue);
   const [reviewedCount, setReviewedCount] = useState(0);
   const [cloudSynced, setCloudSynced] = useState<boolean | null>(null);
 
-  // Initialize session cards once queue loads
+  // Sync session cards if queue updates and session is empty
   useEffect(() => {
-    if (queue.length > 0 && sessionCards.length === 0) {
+    if (sessionCards.length === 0 && queue.length > 0) {
       setSessionCards([...queue]);
     }
   }, [queue, sessionCards.length]);
@@ -102,10 +110,13 @@ export const StudySession: React.FC<StudySessionProps> = ({ allEntries, onFinish
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handleFlip, handleGrade, isFlipped]);
 
-  if (isLoading || (sessionCards.length === 0 && !currentEntry)) {
+  if (sessionCards.length === 0 && !currentEntry) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] text-center p-6 space-y-4">
-        <p className="text-sm text-text-muted">Đang tải thẻ học...</p>
+        <p className="text-sm text-text-muted">Chưa có thẻ nào trong phiên học.</p>
+        <Button size="sm" onClick={onFinish}>
+          {STRINGS.study.backToHome}
+        </Button>
       </div>
     );
   }

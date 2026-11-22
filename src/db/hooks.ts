@@ -253,8 +253,16 @@ export function useStudyQueue(allEntries: Entry[]) {
     return updated;
   };
 
-  const addMoreNewCards = (count = 5) => {
+  const addMoreNewCards = (count = 5): Entry[] => {
+    const unstudied = allEntries.filter(
+      (e) => !progressMap.has(e.id) || progressMap.get(e.id)?.status === 'new'
+    );
+    const currentQueueIds = new Set(queue.map((e) => e.id));
+    const nextCards = unstudied.filter((e) => !currentQueueIds.has(e.id)).slice(0, count);
+
+    setQueue((prev) => [...prev, ...nextCards]);
     setExtraNewCards((prev) => prev + count);
+    return nextCards;
   };
 
   return {
