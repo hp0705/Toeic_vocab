@@ -8,6 +8,7 @@ import { ExampleList } from './ExampleList';
 import { WordFamilyTable } from './WordFamilyTable';
 import { STRINGS } from '../../constants/strings';
 import { Sparkles } from 'lucide-react';
+import { formatPos } from '../../utils/pos';
 
 export interface WordCardProps {
   entry: Entry;
@@ -24,15 +25,6 @@ export const WordCard: React.FC<WordCardProps> = ({
   showAllDetails = false,
   className = ''
 }) => {
-  const getPosVariant = (pos: string) => {
-    const p = pos.toLowerCase();
-    if (p === 'n' || p === 'noun') return 'pos-n' as const;
-    if (p === 'v' || p === 'verb') return 'pos-v' as const;
-    if (p === 'adj' || p === 'adjective') return 'pos-adj' as const;
-    if (p === 'adv' || p === 'adverb') return 'pos-adv' as const;
-    return 'default' as const;
-  };
-
   // If showAllDetails is true (Library mode), render a flat scrollable card
   if (showAllDetails) {
     return (
@@ -44,9 +36,17 @@ export const WordCard: React.FC<WordCardProps> = ({
               <span className="text-xs font-semibold px-2 py-0.5 rounded-sm bg-surface-2 text-text-muted">
                 #{entry.srcNo}
               </span>
-              {entry.pos?.map((p, idx) => (
-                <Chip key={idx} label={p.toUpperCase()} variant={getPosVariant(p)} size="sm" />
-              ))}
+              {entry.pos?.map((p, idx) => {
+                const formatted = formatPos(p);
+                return (
+                  <Chip
+                    key={idx}
+                    label={formatted.label}
+                    variant={formatted.variant}
+                    size="sm"
+                  />
+                );
+              })}
               <span className="text-xs text-text-muted">{entry.topic}</span>
             </div>
             <h2 className="text-2xl font-bold tracking-tight text-text">{entry.headword}</h2>
@@ -62,7 +62,11 @@ export const WordCard: React.FC<WordCardProps> = ({
           specialSenses={entry.specialSenses}
         />
 
-        <PatternChips patterns={entry.patterns} collocations={entry.collocations} />
+        <PatternChips
+          patterns={entry.patterns}
+          collocations={entry.collocations}
+          fixedPrep={entry.fixedPrep}
+        />
 
         <WordFamilyTable wordFamily={entry.wordFamily} />
 
@@ -99,9 +103,17 @@ export const WordCard: React.FC<WordCardProps> = ({
               #{entry.srcNo} · {entry.topic}
             </span>
             <div className="flex gap-1">
-              {entry.pos?.map((p, idx) => (
-                <Chip key={idx} label={p.toUpperCase()} variant={getPosVariant(p)} size="sm" />
-              ))}
+              {entry.pos?.map((p, idx) => {
+                const formatted = formatPos(p);
+                return (
+                  <Chip
+                    key={idx}
+                    label={formatted.code}
+                    variant={formatted.variant}
+                    size="sm"
+                  />
+                );
+              })}
             </div>
           </div>
 
@@ -123,11 +135,30 @@ export const WordCard: React.FC<WordCardProps> = ({
         {/* BACK OF CARD */}
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-lg bg-surface border border-border shadow-card p-5 flex flex-col justify-between overflow-y-auto">
           <div className="space-y-4">
-            <div className="flex items-start justify-between border-b border-border/40 pb-2">
+            <div className="flex items-start justify-between border-b border-border/40 pb-2.5">
               <div>
-                <span className="text-xl font-bold text-text">{entry.headword}</span>
-                {entry.ipa?.us && (
-                  <span className="text-xs text-text-muted font-mono ml-2">{entry.ipa.us}</span>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-xl font-bold text-text">{entry.headword}</span>
+                  {entry.ipa?.us && (
+                    <span className="text-xs text-text-muted font-mono">{entry.ipa.us}</span>
+                  )}
+                </div>
+                {/* Part of Speech (Loại từ) Prominent Display */}
+                {entry.pos && entry.pos.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+                    <span className="text-[11px] font-semibold text-text-muted">Loại từ:</span>
+                    {entry.pos.map((p, idx) => {
+                      const formatted = formatPos(p);
+                      return (
+                        <Chip
+                          key={idx}
+                          label={formatted.label}
+                          variant={formatted.variant}
+                          size="sm"
+                        />
+                      );
+                    })}
+                  </div>
                 )}
               </div>
               <SpeakButton text={entry.headword} size="sm" />
@@ -139,7 +170,11 @@ export const WordCard: React.FC<WordCardProps> = ({
               specialSenses={entry.specialSenses}
             />
 
-            <PatternChips patterns={entry.patterns} collocations={entry.collocations} />
+            <PatternChips
+              patterns={entry.patterns}
+              collocations={entry.collocations}
+              fixedPrep={entry.fixedPrep}
+            />
 
             <WordFamilyTable wordFamily={entry.wordFamily} />
 

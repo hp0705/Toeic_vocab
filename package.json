@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "parse-vocab": "tsx scripts/parse-vocab.ts",
+    "parse-vocab": "tsx scripts/parse-vocab.ts && node scripts/enrich-dataset.mjs",
     "validate-vocab": "tsx scripts/validate.ts",
     "test": "vitest run",
     "type-check": "tsc --noEmit",

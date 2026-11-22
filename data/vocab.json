@@ -21,7 +21,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_package_2",
@@ -45,7 +48,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_warehouse_3",
@@ -69,7 +76,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_inventory_4",
@@ -93,7 +103,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_dispatch_5",
@@ -117,7 +130,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_courier_6",
@@ -141,7 +158,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_supplier_7",
@@ -165,7 +185,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_vendor_8",
@@ -189,7 +212,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_purchase-order_9",
@@ -213,7 +239,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_distribution_10",
@@ -237,7 +266,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_transportation_11",
@@ -261,7 +293,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_freight_12",
@@ -285,7 +320,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_carrier_13",
@@ -309,7 +347,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_load_14",
@@ -333,7 +374,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_unload_15",
@@ -357,7 +402,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_route_16",
@@ -381,7 +429,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_storage_17",
@@ -405,7 +456,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_customs_18",
@@ -429,7 +483,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_export_19",
@@ -453,7 +510,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_import_20",
@@ -477,7 +538,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_logistics_21",
@@ -501,7 +566,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_handling-fee_22",
@@ -525,7 +593,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_return-policy_23",
@@ -549,7 +620,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_stock_24",
@@ -573,7 +647,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_out-of-stock_25",
@@ -597,7 +675,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj",
+      "phrase"
+    ],
+    "fixedPrep": [
+      "of"
+    ],
+    "patterns": [
+      "out of stock (hết hàng)"
+    ]
   },
   {
     "id": "w_in-stock_26",
@@ -621,7 +709,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj",
+      "phrase"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "in stock (còn hàng trong kho)"
+    ]
   },
   {
     "id": "w_order_27",
@@ -645,7 +743,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_purchase_28",
@@ -669,7 +771,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_receipt_29",
@@ -693,7 +799,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_packaging_30",
@@ -717,7 +826,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_reservation_31",
@@ -741,7 +853,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_check-in_32",
@@ -765,7 +880,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_check-out_33",
@@ -789,7 +908,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_available_34",
@@ -813,7 +936,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_amenities_35",
@@ -837,7 +963,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_itinerary_36",
@@ -861,7 +990,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_departure_37",
@@ -885,7 +1017,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_arrival_38",
@@ -909,7 +1044,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_boarding-pass_39",
@@ -933,7 +1071,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_luggage_40",
@@ -957,7 +1098,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_carry-on_41",
@@ -981,7 +1125,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "adj"
+    ]
   },
   {
     "id": "w_destination_42",
@@ -1005,7 +1153,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_fare_43",
@@ -1029,7 +1180,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_accommodation_44",
@@ -1053,7 +1207,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_confirm_45",
@@ -1077,7 +1234,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_upgrade_46",
@@ -1101,7 +1261,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_complimentary_47",
@@ -1125,7 +1289,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_housekeeping_48",
@@ -1149,7 +1316,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_brochure_49",
@@ -1173,7 +1343,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_promotion_50",
@@ -1197,7 +1370,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_discount_51",
@@ -1221,7 +1397,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "discount on + items (giảm giá cho mặt hàng nào)"
+    ]
   },
   {
     "id": "w_customer_52",
@@ -1245,7 +1430,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_client_53",
@@ -1269,7 +1457,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_complaint_54",
@@ -1293,7 +1484,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_facility_55",
@@ -1317,7 +1511,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_booking_56",
@@ -1341,7 +1538,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_layover_57",
@@ -1365,7 +1565,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_department_58",
@@ -1389,7 +1592,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_supervisor_59",
@@ -1413,7 +1619,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_colleague_60",
@@ -1437,7 +1646,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_deadline_61",
@@ -1461,7 +1673,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_approve_62",
@@ -1485,7 +1700,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "approve + N (approve proposal) - Ngoại động từ: KHÔNG dùng \"approve of\" trong TOEIC"
+    ]
   },
   {
     "id": "w_proposal_63",
@@ -1509,7 +1733,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_conference_64",
@@ -1533,7 +1760,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_meeting-minutes_65",
@@ -1557,7 +1787,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_memo_66",
@@ -1581,7 +1814,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_maintenance_67",
@@ -1605,7 +1841,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_approval_68",
@@ -1629,7 +1868,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_appointment_69",
@@ -1653,7 +1895,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_reschedule_70",
@@ -1677,7 +1922,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_orientation_71",
@@ -1701,7 +1949,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_training_72",
@@ -1725,7 +1976,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_vacancy_73",
@@ -1749,7 +2003,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_candidate_74",
@@ -1773,7 +2030,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_benefit_75",
@@ -1797,7 +2057,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "from"
+    ],
+    "patterns": [
+      "benefit from + N (hưởng lợi từ...)"
+    ]
   },
   {
     "id": "w_workload_76",
@@ -1821,7 +2090,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_overtime_77",
@@ -1845,7 +2117,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "adv"
+    ]
   },
   {
     "id": "w_shift_78",
@@ -1869,7 +2145,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_assignment_79",
@@ -1893,7 +2173,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_task_80",
@@ -1917,7 +2200,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_policy_81",
@@ -1941,7 +2227,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_procedure_82",
@@ -1965,7 +2254,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_notice_83",
@@ -1989,7 +2281,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_announcement_84",
@@ -2013,7 +2309,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_document_85",
@@ -2037,7 +2336,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_attachment_86",
@@ -2061,7 +2363,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_performance-review_87",
@@ -2085,7 +2390,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_recruitment_88",
@@ -2109,7 +2417,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_responsibility_89",
@@ -2133,7 +2444,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_feedback_90",
@@ -2157,7 +2471,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_report_91",
@@ -2181,7 +2498,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_summary_92",
@@ -2205,7 +2525,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_update_93",
@@ -2229,7 +2552,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_install_94",
@@ -2253,7 +2580,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_backup_95",
@@ -2277,7 +2607,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_security_96",
@@ -2301,7 +2635,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_access_97",
@@ -2325,7 +2662,18 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ],
+    "fixedPrep": [
+      "to",
+      "none"
+    ],
+    "patterns": [
+      "have access to + N (danh từ đi với to) | access + N (động từ KHÔNG dùng to)"
+    ]
   },
   {
     "id": "w_server_98",
@@ -2349,7 +2697,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_connection_99",
@@ -2373,7 +2724,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_signal_100",
@@ -2397,7 +2751,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_function_101",
@@ -2421,7 +2778,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_notify_102",
@@ -2445,7 +2805,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_remind_103",
@@ -2469,7 +2832,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_instruction_104",
@@ -2493,7 +2859,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_configuration_105",
@@ -2517,7 +2886,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_troubleshooting_106",
@@ -2541,7 +2913,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_security-breach_107",
@@ -2565,7 +2940,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_malfunction_108",
@@ -2589,7 +2967,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_budget_109",
@@ -2613,7 +2994,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_expense_110",
@@ -2637,7 +3022,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_revenue_111",
@@ -2661,7 +3049,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_invoice_112",
@@ -2685,7 +3076,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_contract_113",
@@ -2709,7 +3104,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_agreement_114",
@@ -2733,7 +3132,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_refund_115",
@@ -2757,7 +3159,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_payment_116",
@@ -2781,7 +3186,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_interest_117",
@@ -2805,7 +3213,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_deposit_118",
@@ -2829,7 +3241,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_withdraw_119",
@@ -2853,7 +3268,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_balance_120",
@@ -2877,7 +3295,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_transaction_121",
@@ -2901,7 +3323,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_audit_122",
@@ -2925,7 +3350,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_investment_123",
@@ -2949,7 +3378,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_shareholder_124",
@@ -2973,7 +3405,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_competition_125",
@@ -2997,7 +3432,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_strategy_126",
@@ -3021,7 +3459,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_forecast_127",
@@ -3045,7 +3486,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_analysis_128",
@@ -3069,7 +3513,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_negotiation_129",
@@ -3093,7 +3540,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_partnership_130",
@@ -3117,7 +3567,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_merger_131",
@@ -3141,7 +3594,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_acquisition_132",
@@ -3165,7 +3621,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_funding_133",
@@ -3189,7 +3648,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_capital_134",
@@ -3213,7 +3675,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_debt_135",
@@ -3237,7 +3702,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_fee_136",
@@ -3261,7 +3729,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_charge_137",
@@ -3285,7 +3756,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ],
+    "fixedPrep": [
+      "for"
+    ],
+    "patterns": [
+      "charge (sb) for sth (tính phí ai về việc gì)"
+    ]
   },
   {
     "id": "w_penalty_138",
@@ -3309,7 +3790,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_claim_139",
@@ -3333,7 +3817,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_insurance_140",
@@ -3357,7 +3844,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_financial-statement_141",
@@ -3381,7 +3871,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_accounting_142",
@@ -3405,7 +3898,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_profit-margin_143",
@@ -3429,7 +3925,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_market-share_144",
@@ -3453,7 +3952,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_loan_145",
@@ -3477,7 +3979,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_operating-cost_146",
@@ -3501,7 +4007,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_advertisement_147",
@@ -3525,7 +4034,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_launch_148",
@@ -3549,7 +4061,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_market-research_149",
@@ -3573,7 +4089,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_target-audience_150",
@@ -3597,7 +4116,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_campaign_151",
@@ -3621,7 +4143,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_competitor_152",
@@ -3645,7 +4171,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_retail_153",
@@ -3669,7 +4198,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_wholesale_154",
@@ -3693,7 +4225,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_offer_155",
@@ -3717,7 +4252,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_warranty_156",
@@ -3741,7 +4279,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_guarantee_157",
@@ -3765,7 +4306,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_subscription_158",
@@ -3789,7 +4334,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_renewal_159",
@@ -3813,7 +4361,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_trial_160",
@@ -3837,7 +4388,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_bonus_161",
@@ -3861,7 +4415,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_customer-service_162",
@@ -3885,7 +4442,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_brand-awareness_163",
@@ -3909,7 +4469,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_sales-target_164",
@@ -3933,7 +4496,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_customer-satisfaction_165",
@@ -3957,7 +4523,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_exchange_166",
@@ -3981,7 +4550,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_limited-time-offer_167",
@@ -4005,7 +4577,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_appetizer_168",
@@ -4029,7 +4604,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_entre_169",
@@ -4053,7 +4631,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_dessert_170",
@@ -4077,7 +4658,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_beverage_171",
@@ -4101,7 +4685,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_buffet_172",
@@ -4125,7 +4712,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_catering_173",
@@ -4149,7 +4739,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_cuisine_174",
@@ -4173,7 +4766,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_lease_175",
@@ -4197,7 +4793,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_tenant_176",
@@ -4221,7 +4821,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_landlord_177",
@@ -4245,7 +4848,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_property_178",
@@ -4269,7 +4875,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_mortgage_179",
@@ -4293,7 +4902,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_renovation_180",
@@ -4317,7 +4930,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_utility-bill_181",
@@ -4341,7 +4957,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_furnished_182",
@@ -4365,7 +4984,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_security-deposit_183",
@@ -4389,7 +5011,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_exhibit_184",
@@ -4413,7 +5038,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_exhibition_185",
@@ -4437,7 +5066,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_admission_186",
@@ -4461,7 +5093,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_performance_187",
@@ -4485,7 +5120,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_audience_188",
@@ -4509,7 +5147,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_review_189",
@@ -4533,7 +5174,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_broadcast_190",
@@ -4557,7 +5202,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_physician_191",
@@ -4581,7 +5229,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_prescription_192",
@@ -4605,7 +5256,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_symptom_193",
@@ -4629,7 +5283,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_treatment_194",
@@ -4653,7 +5310,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_checkup_195",
@@ -4677,7 +5337,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "coll_take-a-break_196",
@@ -4701,7 +5364,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-place_197",
@@ -4725,7 +5391,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-effect_198",
@@ -4749,7 +5418,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-advantage-of_199",
@@ -4773,7 +5445,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "of"
+    ],
+    "patterns": [
+      "take advantage of + N (tận dụng, khai thác...)"
+    ]
   },
   {
     "id": "coll_take-part-in_200",
@@ -4797,7 +5478,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "collocation"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "take part in + event (tham gia vào...)"
+    ]
   },
   {
     "id": "coll_take-care-of_201",
@@ -4821,7 +5512,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "of"
+    ],
+    "patterns": [
+      "take care of + N (chăm sóc, lo liệu, xử lý)"
+    ]
   },
   {
     "id": "coll_take-responsibility-for_202",
@@ -4845,7 +5545,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "for"
+    ],
+    "patterns": [
+      "take responsibility for + N/V-ing (nhận trách nhiệm về...)"
+    ]
   },
   {
     "id": "coll_take-action_203",
@@ -4869,7 +5578,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-into-account_204",
@@ -4893,7 +5605,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "into"
+    ],
+    "patterns": [
+      "take sth into account (tính đến, xem xét)"
+    ]
   },
   {
     "id": "coll_take-over_205",
@@ -4917,7 +5638,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-out-a-loan_206",
@@ -4941,7 +5665,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_take-a-look-at_207",
@@ -4965,7 +5692,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-reservation_208",
@@ -4989,7 +5719,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-an-appointment_209",
@@ -5013,7 +5746,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-decision_210",
@@ -5037,7 +5773,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-payment_211",
@@ -5061,7 +5800,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-purchase_212",
@@ -5085,7 +5827,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-an-effort_213",
@@ -5109,7 +5854,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-progress_214",
@@ -5133,7 +5881,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-profit_215",
@@ -5157,7 +5908,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-complaint_216",
@@ -5181,7 +5935,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-sure_217",
@@ -5205,7 +5962,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-an-announcement_218",
@@ -5229,7 +5989,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-changes_219",
@@ -5253,7 +6016,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-suggestion_220",
@@ -5277,7 +6043,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-an-offer_221",
@@ -5301,7 +6070,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-arrangements_222",
@@ -5325,7 +6097,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-a-difference_223",
@@ -5349,7 +6124,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_make-it_224",
@@ -5373,7 +6151,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-an-invoice_225",
@@ -5397,7 +6178,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-a-reminder_226",
@@ -5421,7 +6205,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-a-confirmation_227",
@@ -5445,7 +6232,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-out-invitations_228",
@@ -5469,7 +6259,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-a-request_229",
@@ -5493,7 +6286,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_send-in-an-application_230",
@@ -5517,7 +6313,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-a-presentation_231",
@@ -5541,7 +6340,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-notice_232",
@@ -5565,7 +6367,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-feedback_233",
@@ -5589,7 +6394,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-a-discount_234",
@@ -5613,7 +6421,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "discount on + items (giảm giá cho mặt hàng nào)"
+    ]
   },
   {
     "id": "coll_give-a-demonstration_235",
@@ -5637,7 +6454,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-directions_236",
@@ -5661,7 +6481,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_give-priority-to_237",
@@ -5685,7 +6508,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_hold-a-meeting_238",
@@ -5709,7 +6535,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_hold-a-workshop_239",
@@ -5733,7 +6562,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_hold-the-line_240",
@@ -5757,7 +6589,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_hold-a-position_241",
@@ -5781,7 +6616,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_hold-a-reservation_242",
@@ -5805,7 +6643,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_place-an-order_243",
@@ -5829,7 +6670,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_place-an-advertisement_244",
@@ -5853,7 +6697,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_place-a-call_245",
@@ -5877,7 +6724,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_place-emphasis-on_246",
@@ -5901,7 +6751,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_put-on-hold_247",
@@ -5925,7 +6778,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_keep-a-record_248",
@@ -5949,7 +6805,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_keep-in-touch_249",
@@ -5973,7 +6832,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_keep-track-of_250",
@@ -5997,7 +6859,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_keep-someone-posted_251",
@@ -6021,7 +6886,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_meet-the-deadline_252",
@@ -6045,7 +6913,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_meet-the-requirements_253",
@@ -6069,7 +6940,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_meet-expectations_254",
@@ -6093,7 +6967,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_file-a-complaint_255",
@@ -6117,7 +6994,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_file-a-claim_256",
@@ -6141,7 +7021,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_issue-a-refund_257",
@@ -6165,7 +7048,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_issue-a-receipt_258",
@@ -6189,7 +7075,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_issue-a-statement_259",
@@ -6213,7 +7102,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_conduct-a-survey_260",
@@ -6237,7 +7129,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_conduct-an-interview_261",
@@ -6261,7 +7156,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_conduct-an-inspection_262",
@@ -6285,7 +7183,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_reach-an-agreement_263",
@@ -6309,7 +7210,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "reach + N (reach an agreement / reach destination) - KHÔNG dùng \"reach to\""
+    ]
   },
   {
     "id": "coll_reach-a-goal_264",
@@ -6333,7 +7243,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "reach + N (reach an agreement / reach destination) - KHÔNG dùng \"reach to\""
+    ]
   },
   {
     "id": "coll_run-a-business_265",
@@ -6357,7 +7276,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_run-a-test_266",
@@ -6381,7 +7303,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_set-a-deadline_267",
@@ -6405,7 +7330,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_pay-attention-to_268",
@@ -6429,7 +7357,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "pay attention to + N/V-ing (chú ý đến...)"
+    ]
   },
   {
     "id": "coll_pay-a-fee_269",
@@ -6453,7 +7390,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_do-business-with_270",
@@ -6477,7 +7417,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_do-research_271",
@@ -6501,7 +7444,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_draw-attention-to_272",
@@ -6525,7 +7471,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_raise-a-concern_273",
@@ -6549,7 +7498,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_express-interest-in_274",
@@ -6573,7 +7525,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "coll_submit-a-proposal_275",
@@ -6597,7 +7552,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "collocation"
+    ]
   },
   {
     "id": "w_ensure_276",
@@ -6621,7 +7579,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_obtain_277",
@@ -6645,7 +7606,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_submit_278",
@@ -6669,7 +7633,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_indicate_279",
@@ -6693,7 +7660,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_exceed_280",
@@ -6717,7 +7687,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_reduce_281",
@@ -6741,7 +7714,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_remain_282",
@@ -6765,7 +7741,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_retain_283",
@@ -6789,7 +7768,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_insist_284",
@@ -6813,7 +7795,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "insist on + N/V-ing (khăng khăng làm gì)"
+    ]
   },
   {
     "id": "w_demand_285",
@@ -6865,7 +7856,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_modify_287",
@@ -6889,7 +7883,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_encounter_288",
@@ -6913,7 +7910,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_intend_289",
@@ -6937,7 +7937,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_celebrate_290",
@@ -6961,7 +7964,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_congratulate_291",
@@ -6985,7 +7991,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "congratulate sb on sth (chúc mừng ai vì điều gì)"
+    ]
   },
   {
     "id": "w_emphasize_292",
@@ -7009,7 +8024,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_represent_293",
@@ -7033,7 +8051,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_implement_294",
@@ -7057,7 +8078,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_postpone_295",
@@ -7081,7 +8105,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_participate_296",
@@ -7105,7 +8132,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "participate in + event/survey (tham gia vào...)"
+    ]
   },
   {
     "id": "w_request_297",
@@ -7129,7 +8165,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_resolve_298",
@@ -7153,7 +8193,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_revise_299",
@@ -7177,7 +8220,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_verify_300",
@@ -7201,7 +8247,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_inspect_301",
@@ -7225,7 +8274,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "inspect + N (inspect the facility) - KHÔNG dùng \"inspect into\""
+    ]
   },
   {
     "id": "w_enclose_302",
@@ -7249,7 +8307,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_contribute_303",
@@ -7273,7 +8334,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "contribute to + N/V-ing (đóng góp vào...)"
+    ]
   },
   {
     "id": "w_establish_304",
@@ -7297,7 +8367,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_enhance_305",
@@ -7321,7 +8394,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_assist_306",
@@ -7345,7 +8421,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_attract_307",
@@ -7369,7 +8448,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_refer_308",
@@ -7393,7 +8475,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_eligible_309",
@@ -7417,7 +8502,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "for"
+    ],
+    "patterns": [
+      "be eligible for + N / eligible to V (đủ điều kiện cho...)"
+    ]
   },
   {
     "id": "w_mandatory_310",
@@ -7441,7 +8535,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_optional_311",
@@ -7465,7 +8562,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_valid_312",
@@ -7489,7 +8589,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_sufficient_313",
@@ -7513,7 +8616,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_temporary_314",
@@ -7537,7 +8643,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_previous_315",
@@ -7561,7 +8670,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_efficient_316",
@@ -7585,7 +8697,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_defective_317",
@@ -7609,7 +8724,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_disappointed_318",
@@ -7633,7 +8751,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_original_319",
@@ -7657,7 +8778,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_current_320",
@@ -7681,7 +8805,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_potential_321",
@@ -7705,7 +8832,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_significant_322",
@@ -7729,7 +8859,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_substantial_323",
@@ -7753,7 +8886,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_consistent_324",
@@ -7777,7 +8913,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "be consistent with + N (nhất quán, phù hợp với...)"
+    ]
   },
   {
     "id": "w_comprehensive_325",
@@ -7801,7 +8946,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_flexible_326",
@@ -7825,7 +8973,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_familiar_327",
@@ -7849,7 +9000,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "be familiar with + N (quen thuộc với...)"
+    ]
   },
   {
     "id": "w_reasonable_328",
@@ -7873,7 +9033,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_essential_329",
@@ -7897,7 +9060,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_durable_330",
@@ -7921,7 +9087,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_respective_331",
@@ -7945,7 +9114,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_upcoming_332",
@@ -7969,7 +9141,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_outstanding_333",
@@ -7993,7 +9168,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_ongoing_334",
@@ -8017,7 +9195,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_pending_335",
@@ -8041,7 +9222,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_overdue_336",
@@ -8065,7 +9249,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_preliminary_337",
@@ -8089,7 +9276,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_exclusive_338",
@@ -8113,7 +9303,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_approximately_339",
@@ -8137,7 +9330,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_promptly_340",
@@ -8161,7 +9357,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_shortly_341",
@@ -8185,7 +9384,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_thereby_342",
@@ -8209,7 +9411,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_otherwise_343",
@@ -8233,7 +9438,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_nevertheless_344",
@@ -8257,7 +9465,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_furthermore_345",
@@ -8281,7 +9492,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_meanwhile_346",
@@ -8305,7 +9519,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_primarily_347",
@@ -8329,7 +9546,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_exclusively_348",
@@ -8353,7 +9573,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_consequently_349",
@@ -8377,7 +9600,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_accordingly_350",
@@ -8401,7 +9627,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "phra_whether_351",
@@ -8425,7 +9654,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_although_352",
@@ -8449,7 +9681,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_whereas_353",
@@ -8473,7 +9708,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_despite_354",
@@ -8497,7 +9735,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_in-spite-of_355",
@@ -8521,7 +9762,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_due-to_356",
@@ -8545,7 +9789,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "due to + N/V-ing (bởi vì...)"
+    ]
   },
   {
     "id": "phra_because-of_357",
@@ -8569,7 +9822,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_owing-to_358",
@@ -8593,7 +9849,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "owing to + N (do, bởi vì...)"
+    ]
   },
   {
     "id": "phra_unless_359",
@@ -8617,7 +9882,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_provided-that_360",
@@ -8641,7 +9909,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_as-long-as_361",
@@ -8665,7 +9936,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_regarding_362",
@@ -8689,7 +9963,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_concerning_363",
@@ -8713,7 +9990,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_throughout_364",
@@ -8737,7 +10017,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_within_365",
@@ -8761,7 +10044,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_prior-to_366",
@@ -8785,7 +10071,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "prior to + N/V-ing (trước khi...)"
+    ]
   },
   {
     "id": "phra_upon_367",
@@ -8809,7 +10104,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_in-accordance-with_368",
@@ -8833,7 +10131,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "in accordance with + regulations (phù hợp theo quy định)"
+    ]
   },
   {
     "id": "phra_according-to_369",
@@ -8857,7 +10164,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "according to + N (theo như...)"
+    ]
   },
   {
     "id": "phra_across_370",
@@ -8881,7 +10197,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_instead-of_371",
@@ -8905,7 +10224,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "of"
+    ],
+    "patterns": [
+      "instead of + N/V-ing (thay vì...)"
+    ]
   },
   {
     "id": "phra_in-addition-to_372",
@@ -8929,7 +10257,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "in addition to + N/V-ing (bên cạnh, ngoài ra...)"
+    ]
   },
   {
     "id": "phra_apart-from_373",
@@ -8953,7 +10290,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ],
+    "fixedPrep": [
+      "from"
+    ],
+    "patterns": [
+      "apart from + N (ngoài ra, trừ...)"
+    ]
   },
   {
     "id": "phra_along-with_374",
@@ -8977,7 +10323,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_in-case-of_375",
@@ -9001,7 +10350,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_so-that_376",
@@ -9025,7 +10377,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_rather-than_377",
@@ -9049,7 +10404,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_as-well-as_378",
@@ -9073,7 +10431,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "phra_pick-up_379",
@@ -9097,7 +10458,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_carry-out_380",
@@ -9121,7 +10485,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_fill-out_381",
@@ -9145,7 +10512,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_fill-in-for_382",
@@ -9169,7 +10539,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_look-into_383",
@@ -9193,7 +10566,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ],
+    "fixedPrep": [
+      "into"
+    ],
+    "patterns": [
+      "look into + matter/issue (điều tra, xem xét kỹ)"
+    ]
   },
   {
     "id": "phra_set-up_384",
@@ -9217,7 +10599,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_run-out-of_385",
@@ -9241,7 +10627,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_follow-up-on_386",
@@ -9265,7 +10654,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_get-back-to_387",
@@ -9289,7 +10681,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_put-off_388",
@@ -9313,7 +10708,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_call-off_389",
@@ -9337,7 +10736,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_sign-up-for_390",
@@ -9361,7 +10764,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_drop-off_391",
@@ -9385,7 +10791,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_turn-down_392",
@@ -9409,7 +10818,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_hand-in_393",
@@ -9433,7 +10845,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_figure-out_394",
@@ -9457,7 +10872,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_work-on_395",
@@ -9481,7 +10899,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_deal-with_396",
@@ -9505,7 +10926,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "deal with + client/problem (xử lý, giải quyết...)"
+    ]
   },
   {
     "id": "phra_come-up-with_397",
@@ -9529,7 +10959,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_pass-on_398",
@@ -9553,7 +10986,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_take-off_399",
@@ -9577,7 +11013,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_catch-up-with_400",
@@ -9601,7 +11040,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_look-forward-to_401",
@@ -9625,7 +11067,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "look forward to + N/V-ing (trông đợi điều gì)"
+    ]
   },
   {
     "id": "phra_cut-back-on_402",
@@ -9649,7 +11100,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_sort-out_403",
@@ -9673,7 +11127,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_go-over_404",
@@ -9697,7 +11154,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_keep-up-with_405",
@@ -9721,7 +11181,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_fall-behind_406",
@@ -9745,7 +11208,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ]
   },
   {
     "id": "phra_in-charge-of_407",
@@ -9769,7 +11235,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrasal_v"
+    ],
+    "fixedPrep": [
+      "of"
+    ],
+    "patterns": [
+      "in charge of + N/V-ing (phụ trách...)"
+    ]
   },
   {
     "id": "phra_please-find-attached_408",
@@ -9793,7 +11268,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_enclosed_409",
@@ -9817,7 +11295,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_effective-immediately_410",
@@ -9841,7 +11322,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_as-of_411",
@@ -9865,7 +11349,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_on-behalf-of_412",
@@ -9889,7 +11376,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_at-your-earliest-convenience_413",
@@ -9913,7 +11403,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_apologize-for-any-inconvenience_414",
@@ -9937,7 +11430,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "for",
+      "to"
+    ],
+    "patterns": [
+      "apologize to sb for sth (xin lỗi ai về việc gì)"
+    ]
   },
   {
     "id": "phra_in-response-to_415",
@@ -9961,7 +11464,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_with-regard-to_416",
@@ -9985,7 +11491,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_please-be-advised-that_417",
@@ -10009,7 +11518,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_feel-free-to-contact_418",
@@ -10033,7 +11545,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "contact + N (contact customer service) - KHÔNG dùng \"contact with/to\""
+    ]
   },
   {
     "id": "phra_do-not-hesitate-to_419",
@@ -10057,7 +11578,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_look-forward-to-hearing-from-you_420",
@@ -10081,7 +11605,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "look forward to + N/V-ing (trông đợi điều gì)"
+    ]
   },
   {
     "id": "phra_we-regret-to-inform-you_421",
@@ -10105,7 +11638,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_be-pleased-to-announce_422",
@@ -10129,7 +11665,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_be-required-to_423",
@@ -10153,7 +11692,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_be-entitled-to_424",
@@ -10177,7 +11719,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_subject-to_425",
@@ -10201,7 +11746,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "be subject to + N (phải chịu, tuân theo, có thể thay đổi)"
+    ]
   },
   {
     "id": "phra_upon-request_426",
@@ -10225,7 +11779,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_free-of-charge_427",
@@ -10249,7 +11806,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "for"
+    ],
+    "patterns": [
+      "charge (sb) for sth (tính phí ai về việc gì)"
+    ]
   },
   {
     "id": "phra_on-a-first-come-first-served-basis_428",
@@ -10273,7 +11839,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_terms-and-conditions_429",
@@ -10297,7 +11866,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_in-advance_430",
@@ -10321,7 +11893,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "in advance (trước: pay in advance, book in advance)"
+    ]
   },
   {
     "id": "phra_until-further-notice_431",
@@ -10345,7 +11926,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_non-refundable_432",
@@ -10369,7 +11953,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_out-of-order_433",
@@ -10393,7 +11980,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_under-renovation_434",
@@ -10417,7 +12007,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_under-review_435",
@@ -10441,7 +12034,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_as-scheduled_436",
@@ -10465,7 +12061,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_in-the-event-of_437",
@@ -10489,7 +12088,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "w_manufacture_438",
@@ -10513,7 +12115,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_assembly-line_439",
@@ -10537,7 +12143,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_quality-control_440",
@@ -10561,7 +12170,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_defect_441",
@@ -10585,7 +12197,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_raw-materials_442",
@@ -10609,7 +12224,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_prototype_443",
@@ -10633,7 +12251,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_machinery_444",
@@ -10657,7 +12278,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_output_445",
@@ -10681,7 +12305,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_specifications_446",
@@ -10705,7 +12332,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_applicant_447",
@@ -10729,7 +12359,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_qualification_448",
@@ -10753,7 +12386,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_rsum_449",
@@ -10777,7 +12413,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_resign_450",
@@ -10801,7 +12440,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_retire_451",
@@ -10825,7 +12467,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_relocate_452",
@@ -10849,7 +12494,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_reference_453",
@@ -10873,7 +12521,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_registration_454",
@@ -10897,7 +12548,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_seminar_455",
@@ -10921,7 +12575,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_venue_456",
@@ -10945,7 +12602,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_agenda_457",
@@ -10969,7 +12629,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_sponsor_458",
@@ -10993,7 +12656,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "w_keynote-speaker_459",
@@ -11017,7 +12684,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_attendee_460",
@@ -11041,7 +12711,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_trade-show_461",
@@ -11065,7 +12738,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_merchandise_462",
@@ -11089,7 +12765,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_clearance-sale_463",
@@ -11113,7 +12792,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_hazard_464",
@@ -11137,7 +12819,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_contractor_465",
@@ -11161,7 +12846,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_construction_466",
@@ -11185,7 +12873,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_safety-regulations_467",
@@ -11209,7 +12900,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_commute_468",
@@ -11233,7 +12927,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "w_traffic-congestion_469",
@@ -11257,7 +12955,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_detour_470",
@@ -11281,7 +12982,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_affect_471",
@@ -11306,7 +13010,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_effect_471",
@@ -11331,7 +13038,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_fare_472",
@@ -11356,7 +13066,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_fair_472",
@@ -11381,7 +13094,11 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj",
+      "n"
+    ]
   },
   {
     "id": "conf_principal_473",
@@ -11406,7 +13123,11 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj",
+      "n"
+    ]
   },
   {
     "id": "conf_principle_473",
@@ -11431,7 +13152,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_lose_474",
@@ -11456,7 +13180,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_loose_474",
@@ -11481,7 +13208,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "conf_later_475",
@@ -11506,7 +13236,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_latter_475",
@@ -11531,7 +13264,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_complement_476",
@@ -11556,7 +13292,11 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "conf_compliment_476",
@@ -11581,7 +13321,11 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "conf_stationary_477",
@@ -11606,7 +13350,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "conf_stationery_477",
@@ -11631,7 +13378,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_economic_478",
@@ -11656,7 +13406,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_economical_478",
@@ -11681,7 +13434,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_considerable_479",
@@ -11706,7 +13462,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_considerate_479",
@@ -11731,7 +13490,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_respectful_480",
@@ -11756,7 +13518,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_respective_480",
@@ -11781,7 +13546,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_advice_481",
@@ -11806,7 +13574,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_advise_481",
@@ -11831,7 +13602,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_accept_482",
@@ -11856,7 +13630,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_except_482",
@@ -11881,7 +13658,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_formally_483",
@@ -11906,7 +13686,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_formerly_483",
@@ -11931,7 +13714,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "conf_assure_484",
@@ -11957,7 +13743,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_ensure_484",
@@ -11983,7 +13772,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "conf_insure_484",
@@ -12009,7 +13801,10 @@
       "P6"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "para_postpone_485",
@@ -12034,7 +13829,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "para_delay_485",
@@ -12059,7 +13857,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "para_put-off_485",
@@ -12084,7 +13886,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "phrasal_v"
+    ]
   },
   {
     "id": "para_cancel_486",
@@ -12108,7 +13914,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "para_call-off_486",
@@ -12132,7 +13941,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "phrasal_v"
+    ]
   },
   {
     "id": "para_purchase_487",
@@ -12156,7 +13969,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "para_buy_487",
@@ -12180,7 +13997,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_assist_488",
@@ -12205,7 +14025,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "para_help_488",
@@ -12230,7 +14053,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_give-a-hand_488",
@@ -12255,7 +14081,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_repair_489",
@@ -12279,7 +14108,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_fix_489",
@@ -12303,7 +14135,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_inform_490",
@@ -12328,7 +14163,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_notify_490",
@@ -12353,7 +14191,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_let-someone-know_490",
@@ -12378,7 +14219,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_attend_491",
@@ -12403,7 +14247,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "attend + N (attend a meeting/seminar) - KHÔNG dùng \"attend to/at\""
+    ]
   },
   {
     "id": "para_participate-in_491",
@@ -12428,7 +14281,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "collocation"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "participate in + event/meeting (tham gia vào...)"
+    ]
   },
   {
     "id": "para_take-part-in_491",
@@ -12453,7 +14316,17 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "collocation"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "take part in + event (tham gia vào...)"
+    ]
   },
   {
     "id": "para_prior-to_492",
@@ -12477,7 +14350,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "prior to + N/V-ing (trước khi...)"
+    ]
   },
   {
     "id": "para_before_492",
@@ -12501,7 +14383,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "para_approximately_493",
@@ -12526,7 +14414,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_about_493",
@@ -12551,7 +14442,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_around_493",
@@ -12576,7 +14470,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_complimentary_494",
@@ -12601,7 +14498,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "para_free_494",
@@ -12626,7 +14526,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_free-of-charge_494",
@@ -12651,7 +14554,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "for"
+    ],
+    "patterns": [
+      "charge (sb) for sth (tính phí ai về việc gì)"
+    ]
   },
   {
     "id": "para_commence_495",
@@ -12676,7 +14588,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_begin_495",
@@ -12701,7 +14616,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_start_495",
@@ -12726,7 +14644,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_vehicle_496",
@@ -12750,7 +14671,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_car_496",
@@ -12774,7 +14698,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_personnel_497",
@@ -12799,7 +14726,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_staff_497",
@@ -12824,7 +14754,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_employees_497",
@@ -12849,7 +14782,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "para_invoice_498",
@@ -12873,7 +14809,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "para_bill_498",
@@ -12897,7 +14837,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "poly_address-v_499",
@@ -13306,6 +15250,7 @@
     ],
     "meaningVi": "thu hút; tham gia",
     "patterns": [
+      "engage in + activities (tham gia vào hoạt động)",
       "engage + khách hàng",
       "engage in + N"
     ],
@@ -13321,7 +15266,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "fixedPrep": [
+      "in"
+    ]
   },
   {
     "id": "poly_board-n_514",
@@ -13391,6 +15339,7 @@
     ],
     "meaningVi": "chủ đề; tiêu đề email",
     "patterns": [
+      "be subject to + N (phải chịu, tuân theo, có thể thay đổi)",
       "subject line",
       "the subject of"
     ],
@@ -13406,7 +15355,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "poly_outlet-n_517",
@@ -13487,7 +15439,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "poly_measure-n_520",
@@ -13640,6 +15595,7 @@
     "headword": "account for",
     "meaningVi": "chiếm (tỷ lệ); giải thích cho",
     "patterns": [
+      "account for + % (chiếm tỷ lệ); account for sth (giải thích cho...)",
       "account for + số %/N"
     ],
     "examples": [
@@ -13654,7 +15610,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "phra_not-only-but-also_526",
@@ -13679,7 +15641,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_either-or_527",
@@ -13704,7 +15669,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_neither-nor_528",
@@ -13729,7 +15697,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_both-and_529",
@@ -13754,7 +15725,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_so-that_530",
@@ -13779,7 +15753,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_such-that_531",
@@ -13804,7 +15781,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_in-order-to_532",
@@ -13829,7 +15809,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_so-as-to_533",
@@ -13854,7 +15837,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_now-that_534",
@@ -13879,7 +15865,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_as-soon-as_535",
@@ -13904,7 +15893,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_once_536",
@@ -13929,7 +15921,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_by-the-time_537",
@@ -13954,7 +15949,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_even-though_538",
@@ -13979,7 +15977,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_while_539",
@@ -14004,7 +16005,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_since_540",
@@ -14029,7 +16033,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_until_541",
@@ -14054,7 +16061,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_as-a-result_542",
@@ -14079,7 +16089,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_therefore_543",
@@ -14104,7 +16117,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_however_544",
@@ -14129,7 +16145,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_moreover_545",
@@ -14154,7 +16173,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_on-the-other-hand_546",
@@ -14179,7 +16201,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_in-contrast_547",
@@ -14204,7 +16229,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_nonetheless_548",
@@ -14229,7 +16257,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_in-addition_549",
@@ -14254,7 +16285,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_for-example_550",
@@ -14279,7 +16313,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_in-fact_551",
@@ -14304,7 +16341,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_instead_552",
@@ -14357,7 +16397,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_in-the-meantime_554",
@@ -14382,7 +16425,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "phra_so-far_555",
@@ -14407,7 +16453,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "conj"
+    ]
   },
   {
     "id": "prep_by-vs-until_556",
@@ -14433,7 +16482,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_for-during-while_557",
@@ -14460,7 +16512,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_since-from_558",
@@ -14486,7 +16541,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_between-among_559",
@@ -14512,7 +16570,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_beside-besides_560",
@@ -14538,7 +16599,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_beyond_561",
@@ -14563,7 +16627,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "prep_following_562",
@@ -14588,7 +16655,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_pending_563",
@@ -14613,7 +16683,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_unlike_564",
@@ -14638,7 +16711,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_per_565",
@@ -14663,7 +16739,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_via_566",
@@ -14688,7 +16767,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_given_567",
@@ -14713,7 +16795,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "prep"
+    ]
   },
   {
     "id": "prep_on-time-in-time_568",
@@ -14739,7 +16824,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "prep_be-responsible-for_569",
@@ -14750,6 +16838,7 @@
     "headword": "be responsible for",
     "meaningVi": "chịu trách nhiệm về",
     "patterns": [
+      "be responsible for + N/V-ing (chịu trách nhiệm về...)",
       "for + N/V-ing"
     ],
     "examples": [
@@ -14764,7 +16853,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "prep_be-eligible-for_570",
@@ -14775,6 +16870,7 @@
     "headword": "be eligible for",
     "meaningVi": "đủ điều kiện cho",
     "patterns": [
+      "be eligible for + N / eligible to V (đủ điều kiện cho...)",
       "for + N",
       "hoặc eligible to V"
     ],
@@ -14790,7 +16886,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "prep_be-capable-of_571",
@@ -14801,6 +16903,7 @@
     "headword": "be capable of",
     "meaningVi": "có khả năng",
     "patterns": [
+      "be capable of + V-ing (có khả năng làm gì)",
       "of + V-ing"
     ],
     "examples": [
@@ -14815,7 +16918,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "of"
+    ]
   },
   {
     "id": "prep_be-aware-of_572",
@@ -14826,6 +16935,7 @@
     "headword": "be aware of",
     "meaningVi": "nhận thức được",
     "patterns": [
+      "be aware of + N (nhận thức được...)",
       "of + N"
     ],
     "examples": [
@@ -14840,7 +16950,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "of"
+    ]
   },
   {
     "id": "prep_be-interested-in_573",
@@ -14851,6 +16967,7 @@
     "headword": "be interested in",
     "meaningVi": "quan tâm đến",
     "patterns": [
+      "be interested in + N/V-ing (quan tâm đến...)",
       "in + N/V-ing"
     ],
     "examples": [
@@ -14865,7 +16982,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "in"
+    ]
   },
   {
     "id": "prep_be-committed-to_574",
@@ -14876,6 +16999,7 @@
     "headword": "be committed to",
     "meaningVi": "cam kết với",
     "patterns": [
+      "be committed to + N/V-ing (cam kết làm gì - to là giới từ)",
       "to + V-ing (to là giới từ)"
     ],
     "examples": [
@@ -14890,7 +17014,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "prep_be-dedicated-to_575",
@@ -14901,6 +17031,7 @@
     "headword": "be dedicated to",
     "meaningVi": "tận tâm với",
     "patterns": [
+      "be dedicated to + N/V-ing (tận tâm với...)",
       "to + V-ing"
     ],
     "examples": [
@@ -14915,7 +17046,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "prep_be-satisfied-with_576",
@@ -14926,6 +17063,7 @@
     "headword": "be satisfied with",
     "meaningVi": "hài lòng với",
     "patterns": [
+      "be satisfied with + N (hài lòng với...)",
       "with + N"
     ],
     "examples": [
@@ -14940,7 +17078,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "with"
+    ]
   },
   {
     "id": "prep_depend-on_577",
@@ -14951,6 +17095,7 @@
     "headword": "depend on",
     "meaningVi": "phụ thuộc vào",
     "patterns": [
+      "depend on + N (phụ thuộc vào...)",
       "on + N"
     ],
     "examples": [
@@ -14965,7 +17110,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ]
   },
   {
     "id": "prep_consist-of_578",
@@ -14976,6 +17127,7 @@
     "headword": "consist of",
     "meaningVi": "gồm có",
     "patterns": [
+      "consist of + N (gồm có...)",
       "of + N"
     ],
     "examples": [
@@ -14990,7 +17142,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "of"
+    ]
   },
   {
     "id": "prep_result-in_579",
@@ -15001,6 +17159,7 @@
     "headword": "result in",
     "meaningVi": "dẫn đến",
     "patterns": [
+      "result in + N (dẫn đến kết quả gì)",
       "in + N"
     ],
     "examples": [
@@ -15015,7 +17174,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ]
   },
   {
     "id": "prep_result-from_580",
@@ -15026,6 +17191,7 @@
     "headword": "result from",
     "meaningVi": "do bởi",
     "patterns": [
+      "result from + N (bắt nguồn từ, do nguyên nhân gì)",
       "from + N"
     ],
     "examples": [
@@ -15040,7 +17206,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "from"
+    ]
   },
   {
     "id": "prep_focus-on_581",
@@ -15051,6 +17223,7 @@
     "headword": "focus on",
     "meaningVi": "tập trung vào",
     "patterns": [
+      "focus on + N/V-ing (tập trung vào...)",
       "on + N/V-ing"
     ],
     "examples": [
@@ -15065,7 +17238,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ]
   },
   {
     "id": "prep_apply-for_582",
@@ -15076,6 +17255,7 @@
     "headword": "apply for",
     "meaningVi": "nộp đơn xin",
     "patterns": [
+      "apply for + job/position/permit (nộp đơn xin việc/giấy phép...)",
       "for + job/loan/permit"
     ],
     "examples": [
@@ -15090,7 +17270,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "prep_apply-to_583",
@@ -15101,6 +17287,7 @@
     "headword": "apply to",
     "meaningVi": "áp dụng cho; nộp đơn vào",
     "patterns": [
+      "apply to + người/tổ chức (áp dụng cho ai; nộp đơn vào đâu)",
       "to + người/tổ chức"
     ],
     "examples": [
@@ -15115,7 +17302,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "prep_benefit-from_584",
@@ -15126,6 +17319,7 @@
     "headword": "benefit from",
     "meaningVi": "hưởng lợi từ",
     "patterns": [
+      "benefit from + N (hưởng lợi từ...)",
       "from + N"
     ],
     "examples": [
@@ -15140,7 +17334,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "from"
+    ]
   },
   {
     "id": "prep_differ-from_585",
@@ -15151,6 +17351,7 @@
     "headword": "differ from",
     "meaningVi": "khác với",
     "patterns": [
+      "differ from + N (khác với...)",
       "from + N"
     ],
     "examples": [
@@ -15165,7 +17366,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "from"
+    ]
   },
   {
     "id": "prep_succeed-in_586",
@@ -15176,6 +17383,7 @@
     "headword": "succeed in",
     "meaningVi": "thành công trong",
     "patterns": [
+      "succeed in + V-ing (thành công trong việc làm gì)",
       "in + V-ing"
     ],
     "examples": [
@@ -15190,7 +17398,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ]
   },
   {
     "id": "prep_object-to_587",
@@ -15201,6 +17415,7 @@
     "headword": "object to",
     "meaningVi": "phản đối",
     "patterns": [
+      "object to + N/V-ing (phản đối điều gì - to là giới từ)",
       "to + N/V-ing"
     ],
     "examples": [
@@ -15215,7 +17430,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "w_reimburse_588",
@@ -15226,6 +17447,7 @@
     "headword": "reimburse",
     "meaningVi": "hoàn lại (chi phí)",
     "patterns": [
+      "reimburse sb for sth (hoàn tiền lại cho ai khoản gì)",
       "reimburse + người + for + N"
     ],
     "examples": [
@@ -15240,7 +17462,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "w_expire_589",
@@ -15251,6 +17479,7 @@
     "headword": "expire",
     "meaningVi": "hết hạn",
     "patterns": [
+      "expire on + date (hết hạn vào ngày cụ thể)",
       "expire on + ngày"
     ],
     "examples": [
@@ -15265,7 +17494,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ]
   },
   {
     "id": "w_enroll_590",
@@ -15276,6 +17511,7 @@
     "headword": "enroll",
     "meaningVi": "ghi danh",
     "patterns": [
+      "enroll in + a course/program (ghi danh vào khóa học)",
       "enroll in + khóa học"
     ],
     "examples": [
@@ -15290,7 +17526,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ]
   },
   {
     "id": "w_accommodate_591",
@@ -15301,6 +17543,7 @@
     "headword": "accommodate",
     "meaningVi": "đáp ứng; chứa được",
     "patterns": [
+      "accommodate + N (accommodate 300 guests) - KHÔNG dùng \"accommodate for\"",
       "accommodate + N (không giới từ)"
     ],
     "examples": [
@@ -15315,7 +17558,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ]
   },
   {
     "id": "w_anticipate_592",
@@ -15340,7 +17589,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_facilitate_593",
@@ -15365,7 +17617,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_oversee_594",
@@ -15390,7 +17645,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_allocate_595",
@@ -15401,6 +17659,7 @@
     "headword": "allocate",
     "meaningVi": "phân bổ",
     "patterns": [
+      "allocate A to B (phân bổ A cho B)",
       "allocate A to B"
     ],
     "examples": [
@@ -15415,7 +17674,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ]
   },
   {
     "id": "w_generate_596",
@@ -15440,7 +17705,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_undergo_597",
@@ -15465,7 +17733,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_assess_598",
@@ -15490,7 +17761,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_acquire_599",
@@ -15515,7 +17789,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_resume_600",
@@ -15540,7 +17817,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_enable_601",
@@ -15565,7 +17845,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_determine_602",
@@ -15590,7 +17873,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_comprise_603",
@@ -15601,6 +17887,7 @@
     "headword": "comprise",
     "meaningVi": "gồm có",
     "patterns": [
+      "comprise + N (comprise 10 members) - KHÔNG dùng \"comprise of\"",
       "comprise + N (KHÔNG có \"of\")"
     ],
     "examples": [
@@ -15615,7 +17902,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ]
   },
   {
     "id": "w_undertake_604",
@@ -15640,7 +17933,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_renew_605",
@@ -15665,7 +17961,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_extend_606",
@@ -15690,7 +17989,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_finalize_607",
@@ -15715,7 +18017,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_coordinate_608",
@@ -15741,7 +18046,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_disclose_609",
@@ -15766,7 +18074,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_waive_610",
@@ -15791,7 +18102,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_retrieve_611",
@@ -15816,7 +18130,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_forward_612",
@@ -15841,7 +18158,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "w_accessible_613",
@@ -15866,7 +18186,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_applicable_614",
@@ -15891,7 +18214,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_comparable_615",
@@ -15916,7 +18242,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_adequate_616",
@@ -15941,7 +18270,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_accurate_617",
@@ -15966,7 +18298,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_beneficial_618",
@@ -15991,7 +18326,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_extensive_619",
@@ -16016,7 +18354,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_prospective_620",
@@ -16041,7 +18382,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_relevant_621",
@@ -16066,7 +18410,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_subsequent_622",
@@ -16092,7 +18439,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_thorough_623",
@@ -16117,7 +18467,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_valuable_624",
@@ -16142,7 +18495,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_initial_625",
@@ -16167,7 +18523,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_numerous_626",
@@ -16192,7 +18551,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_notable_627",
@@ -16217,7 +18579,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_widespread_628",
@@ -16242,7 +18607,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_appropriate_629",
@@ -16267,7 +18635,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_likely_630",
@@ -16292,7 +18663,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_capable_631",
@@ -16303,6 +18677,7 @@
     "headword": "capable",
     "meaningVi": "có năng lực",
     "patterns": [
+      "be capable of + V-ing (có năng lực/khả năng làm gì)",
       "capable of + V-ing"
     ],
     "examples": [
@@ -16317,7 +18692,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ],
+    "fixedPrep": [
+      "of"
+    ]
   },
   {
     "id": "w_consecutive_632",
@@ -16342,7 +18723,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj"
+    ]
   },
   {
     "id": "w_ultimately_633",
@@ -16367,7 +18751,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_readily_634",
@@ -16392,7 +18779,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_strictly_635",
@@ -16417,7 +18807,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_closely_636",
@@ -16442,7 +18835,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_highly_637",
@@ -16467,7 +18863,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_briefly_638",
@@ -16492,7 +18891,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adv"
+    ]
   },
   {
     "id": "w_expiration_639",
@@ -16517,7 +18919,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_reimbursement_640",
@@ -16542,7 +18947,13 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ],
+    "fixedPrep": [
+      "for"
+    ]
   },
   {
     "id": "w_inquiry_641",
@@ -16567,7 +18978,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_criteria_642",
@@ -16593,7 +19007,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_regulation_643",
@@ -16618,7 +19035,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_eligibility_644",
@@ -16643,7 +19063,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_recipient_645",
@@ -16668,7 +19091,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_premises_646",
@@ -16693,7 +19119,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_workforce_647",
@@ -16718,7 +19147,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_turnover_648",
@@ -16743,7 +19175,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_branch_649",
@@ -16768,7 +19203,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_subsidiary_650",
@@ -16793,7 +19231,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "adj"
+    ]
   },
   {
     "id": "w_objective_651",
@@ -16818,7 +19260,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "adj"
+    ]
   },
   {
     "id": "w_initiative_652",
@@ -16844,7 +19290,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_milestone_653",
@@ -16869,7 +19318,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_surplus_654",
@@ -16894,7 +19346,11 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "adj"
+    ]
   },
   {
     "id": "w_quotation_655",
@@ -16919,7 +19375,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_premium_656",
@@ -16944,7 +19403,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_expertise_657",
@@ -16969,7 +19431,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_commission_658",
@@ -16994,7 +19459,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_supplement_659",
@@ -17019,7 +19487,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "w_venture_660",
@@ -17044,7 +19515,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "phra_rsvp_661",
@@ -17066,7 +19540,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_eta_662",
@@ -17088,7 +19565,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_fyi_663",
@@ -17110,7 +19590,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_asap_664",
@@ -17132,7 +19615,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_rd_665",
@@ -17154,7 +19640,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_cc_666",
@@ -17176,7 +19665,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_inc-ltd_667",
@@ -17198,7 +19690,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_touch-base_668",
@@ -17220,7 +19715,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "base on / be based on + N (dựa trên cơ sở...)"
+    ]
   },
   {
     "id": "phra_heads-up_669",
@@ -17242,7 +19746,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_loop-in_670",
@@ -17264,7 +19771,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_circle-back_671",
@@ -17286,7 +19796,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_reach-out_672",
@@ -17308,7 +19821,16 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "reach + N (reach an agreement / reach destination) - KHÔNG dùng \"reach to\""
+    ]
   },
   {
     "id": "phra_on-track_673",
@@ -17330,7 +19852,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_ahead-of-schedule_674",
@@ -17352,7 +19877,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_cover-for-someone_675",
@@ -17374,7 +19902,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_wrap-up_676",
@@ -17396,7 +19927,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_hold-off_677",
@@ -17418,7 +19952,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "phra_bring-up_678",
@@ -17440,7 +19977,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "phrase"
+    ]
   },
   {
     "id": "quan_a-number-of_679",
@@ -17466,7 +20006,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_the-number-of_680",
@@ -17492,7 +20035,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-variety-of_681",
@@ -17517,7 +20063,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-majority-of_682",
@@ -17542,7 +20091,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_several_683",
@@ -17567,7 +20119,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_various_684",
@@ -17592,7 +20147,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_each-of_685",
@@ -17618,7 +20176,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_every_686",
@@ -17643,7 +20204,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-great-deal-of_687",
@@ -17668,7 +20232,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-large-amount-of_688",
@@ -17693,7 +20260,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-few-few_689",
@@ -17719,7 +20289,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_a-little-little_690",
@@ -17744,7 +20317,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_one-of-the_691",
@@ -17770,7 +20346,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "quan_most-of_692",
@@ -17795,7 +20374,10 @@
       "P7"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "quantifier"
+    ]
   },
   {
     "id": "wf_accept_1",
@@ -17829,7 +20411,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_accompany_2",
@@ -17861,7 +20446,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_accomplish_3",
@@ -17893,7 +20481,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_account_4",
@@ -17926,7 +20517,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_achieve_5",
@@ -17958,7 +20553,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_act_6",
@@ -17992,7 +20590,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_add_7",
@@ -18026,7 +20628,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_adjust_8",
@@ -18058,7 +20663,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_administer_9",
@@ -18092,7 +20700,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_advise_10",
@@ -18126,7 +20737,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_announce_11",
@@ -18156,7 +20770,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_appoint_12",
@@ -18188,7 +20805,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_appreciate_13",
@@ -18222,7 +20842,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_approve_14",
@@ -18254,7 +20877,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "approve + N (approve proposal) - Ngoại động từ: KHÔNG dùng \"approve of\" trong TOEIC"
+    ]
   },
   {
     "id": "wf_arrange_15",
@@ -18284,7 +20916,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_assign_16",
@@ -18316,7 +20951,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_attend_17",
@@ -18350,7 +20988,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "attend + N (attend a meeting/seminar) - KHÔNG dùng \"attend to/at\""
+    ]
   },
   {
     "id": "wf_authorize_18",
@@ -18382,7 +21029,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_consult_19",
@@ -18414,7 +21064,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_cooperate_20",
@@ -18448,7 +21101,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "cooperate with + N (hợp tác với...)"
+    ]
   },
   {
     "id": "wf_decide_21",
@@ -18482,7 +21144,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "decide on + N (quyết định chọn cái gì)"
+    ]
   },
   {
     "id": "wf_direct_22",
@@ -18516,7 +21187,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "adj"
+    ]
   },
   {
     "id": "wf_employ_23",
@@ -18548,7 +21223,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_evaluate_24",
@@ -18580,7 +21258,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_manage_25",
@@ -18612,7 +21293,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_notify_26",
@@ -18642,7 +21326,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_organize_27",
@@ -18674,7 +21361,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_perform_28",
@@ -18704,7 +21394,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_prefer_29",
@@ -18738,7 +21431,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_prepare_30",
@@ -18770,7 +21466,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_recommend_31",
@@ -18802,7 +21501,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_require_32",
@@ -18834,7 +21536,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_respond_33",
@@ -18868,7 +21573,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "respond to + email/inquiry (phản hồi lại...)"
+    ]
   },
   {
     "id": "wf_supervise_34",
@@ -18900,7 +21614,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_train_35",
@@ -18932,7 +21649,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_analyze_36",
@@ -18966,7 +21686,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_compete_37",
@@ -19000,7 +21723,17 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "with",
+      "for"
+    ],
+    "patterns": [
+      "compete with sb for sth (cạnh tranh với ai để giành cái gì)"
+    ]
   },
   {
     "id": "wf_complete_38",
@@ -19034,7 +21767,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "adj"
+    ]
   },
   {
     "id": "wf_comply_39",
@@ -19066,7 +21803,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "with"
+    ],
+    "patterns": [
+      "comply with + rules/regulations (tuân thủ luật lệ/quy định)"
+    ]
   },
   {
     "id": "wf_consider_40",
@@ -19100,7 +21846,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_create_41",
@@ -19134,7 +21883,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_depend_42",
@@ -19166,7 +21918,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "depend on + N (phụ thuộc vào...)"
+    ]
   },
   {
     "id": "wf_develop_43",
@@ -19198,7 +21959,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_differ_44",
@@ -19232,7 +21996,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "from"
+    ],
+    "patterns": [
+      "differ from + N (khác biệt so với...)"
+    ]
   },
   {
     "id": "wf_economy_45",
@@ -19266,7 +22039,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "wf_effect_46",
@@ -19300,7 +22076,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "wf_expand_47",
@@ -19332,7 +22111,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_finance_48",
@@ -19366,7 +22148,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "wf_grow_49",
@@ -19398,7 +22183,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_impress_50",
@@ -19432,7 +22220,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_increase_51",
@@ -19466,7 +22257,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_inform_52",
@@ -19500,7 +22295,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_innovate_53",
@@ -19534,7 +22332,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_invest_54",
@@ -19564,7 +22365,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "invest in + market/stocks (đầu tư vào...)"
+    ]
   },
   {
     "id": "wf_market_55",
@@ -19596,7 +22406,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_produce_56",
@@ -19630,7 +22443,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_profit_57",
@@ -19664,7 +22481,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n",
+      "v"
+    ]
   },
   {
     "id": "wf_promote_58",
@@ -19696,7 +22517,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_rely_59",
@@ -19731,7 +22555,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "on"
+    ],
+    "patterns": [
+      "rely on + N (dựa dẫm, tin tưởng vào...)"
+    ]
   },
   {
     "id": "wf_success_60",
@@ -19765,7 +22598,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_vary_61",
@@ -19797,7 +22633,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_communicate_62",
@@ -19829,7 +22668,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_convenience_63",
@@ -19861,7 +22703,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "n"
+    ]
   },
   {
     "id": "wf_describe_64",
@@ -19893,7 +22738,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_encourage_65",
@@ -19927,7 +22775,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_explain_66",
@@ -19959,7 +22810,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_identify_67",
@@ -19991,7 +22845,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_industry_68",
@@ -20023,7 +22880,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_interrupt_69",
@@ -20053,7 +22913,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_maintain_70",
@@ -20083,7 +22946,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_negotiate_71",
@@ -20115,7 +22981,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_permit_72",
@@ -20147,7 +23016,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_satisfy_73",
@@ -20181,7 +23053,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_secure_74",
@@ -20215,7 +23090,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "adj",
+      "v"
+    ]
   },
   {
     "id": "wf_apply_75",
@@ -20243,7 +23122,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_employ_76",
@@ -20272,7 +23154,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_participate_77",
@@ -20300,7 +23185,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "participate in + event/survey (tham gia vào...)"
+    ]
   },
   {
     "id": "wf_consult_78",
@@ -20328,7 +23222,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_compete_79",
@@ -20356,7 +23253,17 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "with",
+      "for"
+    ],
+    "patterns": [
+      "compete with sb for sth (cạnh tranh với ai để giành cái gì)"
+    ]
   },
   {
     "id": "wf_assist_80",
@@ -20384,7 +23291,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_supervise_81",
@@ -20412,7 +23322,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_manage_82",
@@ -20440,7 +23353,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_direct_83",
@@ -20468,7 +23384,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "adj"
+    ]
   },
   {
     "id": "wf_operate_84",
@@ -20496,7 +23416,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_instruct_85",
@@ -20524,7 +23447,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_invest_86",
@@ -20552,7 +23478,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "in"
+    ],
+    "patterns": [
+      "invest in + market/stocks (đầu tư vào...)"
+    ]
   },
   {
     "id": "wf_produce_87",
@@ -20580,7 +23515,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_represent_88",
@@ -20608,7 +23547,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_interview_89",
@@ -20637,7 +23579,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_train_90",
@@ -20666,7 +23611,10 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   },
   {
     "id": "wf_attend_91",
@@ -20694,7 +23642,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "none"
+    ],
+    "patterns": [
+      "attend + N (attend a meeting/seminar) - KHÔNG dùng \"attend to/at\""
+    ]
   },
   {
     "id": "wf_contribute_92",
@@ -20722,7 +23679,16 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ],
+    "fixedPrep": [
+      "to"
+    ],
+    "patterns": [
+      "contribute to + N/V-ing (đóng góp vào...)"
+    ]
   },
   {
     "id": "wf_supply_93",
@@ -20750,7 +23716,11 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v",
+      "n"
+    ]
   },
   {
     "id": "wf_sell_94",
@@ -20778,6 +23748,9 @@
       "P5"
     ],
     "level": "core",
-    "reviewed": true
+    "reviewed": true,
+    "pos": [
+      "v"
+    ]
   }
 ]

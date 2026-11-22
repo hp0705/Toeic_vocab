@@ -56,6 +56,7 @@ export const EntrySchema = z.object({
   meaningEn: z.string().optional(),
   specialSenses: z.array(SpecialSenseSchema).optional(),
   patterns: z.array(z.string()).optional(),
+  fixedPrep: z.array(z.string()).optional(),
   collocations: z.array(z.string()).optional(),
   examples: z.array(ExampleSchema),
   mnemonic: z.string().optional(),
