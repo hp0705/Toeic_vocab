@@ -6,7 +6,8 @@ import { WordCard } from '../components/card/WordCard';
 import { Button } from '../components/ui/Button';
 import { STRINGS } from '../constants/strings';
 import { speak } from '../audio/speak';
-import { X, CheckCircle2, RotateCcw } from 'lucide-react';
+import { uploadToGitHubGist } from '../db/githubSync';
+import { X, CheckCircle2, RotateCcw, CloudCheck } from 'lucide-react';
 
 export interface StudySessionProps {
   allEntries: Entry[];
@@ -15,12 +16,13 @@ export interface StudySessionProps {
 
 export const StudySession: React.FC<StudySessionProps> = ({ allEntries, onFinish }) => {
   const { queue, progressMap, submitGrade, isLoading } = useStudyQueue(allEntries);
-  const { settings } = useSettings();
+  const { settings, updateSettings } = useSettings();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [sessionCards, setSessionCards] = useState<Entry[]>([]);
   const [reviewedCount, setReviewedCount] = useState(0);
+  const [cloudSynced, setCloudSynced] = useState<boolean | null>(null);
 
   // Initialize session cards once queue loads
   useEffect(() => {
@@ -28,6 +30,22 @@ export const StudySession: React.FC<StudySessionProps> = ({ allEntries, onFinish
       setSessionCards([...queue]);
     }
   }, [queue, sessionCards.length]);
+
+  // Sync to GitHub on session finish if token is available
+  useEffect(() => {
+    if (sessionCards.length > 0 && currentIndex >= sessionCards.length && reviewedCount > 0 && settings.githubToken) {
+      uploadToGitHubGist(settings.githubToken, settings.githubGistId).then((res) => {
+        if (res.success && res.gistId) {
+          setCloudSynced(true);
+          if (res.gistId !== settings.githubGistId) {
+            updateSettings({ githubGistId: res.gistId });
+          }
+        } else {
+          setCloudSynced(false);
+        }
+      });
+    }
+  }, [currentIndex, sessionCards.length, reviewedCount, settings.githubToken, settings.githubGistId, updateSettings]);
 
   const currentEntry = sessionCards[currentIndex];
 
@@ -103,6 +121,19 @@ export const StudySession: React.FC<StudySessionProps> = ({ allEntries, onFinish
           <h2 className="text-2xl font-bold text-text mb-1">{STRINGS.study.sessionFinished}</h2>
           <p className="text-sm text-text-muted">{STRINGS.study.cardsReviewed(reviewedCount)}</p>
         </div>
+
+        {cloudSynced === true && (
+          <div className="p-2.5 rounded-md bg-ok-light border border-ok/30 text-ok text-xs font-semibold flex items-center justify-center gap-1.5 animate-in fade-in">
+            <CloudCheck size={16} />
+            <span>Đã tự động lưu lên GitHub của bạn!</span>
+          </div>
+        )}
+
+        {cloudSynced === false && (
+          <div className="p-2.5 rounded-md bg-bad-light border border-bad/30 text-bad text-xs font-semibold flex items-center justify-center gap-1.5">
+            <span>Tiến độ đã lưu trên máy, nhưng chưa đồng bộ GitHub. Hãy kiểm tra lại Token ở Cài đặt.</span>
+          </div>
+        )}
         <div className="w-full space-y-3">
           <Button fullWidth size="lg" onClick={onFinish}>
             {STRINGS.study.backToHome}

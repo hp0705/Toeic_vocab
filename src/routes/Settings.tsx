@@ -58,20 +58,34 @@ export const Settings: React.FC = () => {
     if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
+  const handleSaveTokenOnly = async () => {
+    const clean = tokenInput.trim().replace(/^(Bearer|token)\s+/i, '');
+    if (!clean) {
+      setStatusMessage('Vui lòng nhập Token trước khi lưu.');
+      return;
+    }
+    await updateSettings({ githubToken: clean });
+    setStatusMessage('✅ Đã lưu mã Token vào thiết bị của bạn!');
+  };
+
   const handleSaveGist = async () => {
-    if (!tokenInput.trim()) {
+    const clean = tokenInput.trim().replace(/^(Bearer|token)\s+/i, '');
+    if (!clean) {
       setStatusMessage('Vui lòng nhập GitHub Token của bạn');
       return;
     }
+    // Save token to local settings immediately
+    await updateSettings({ githubToken: clean });
+
     setIsSyncing(true);
-    setStatusMessage('Đang tải lên GitHub Gist...');
+    setStatusMessage('Đang kết nối và tải lên GitHub Gist...');
     try {
-      const res = await uploadToGitHubGist(tokenInput.trim(), settings.githubGistId);
+      const res = await uploadToGitHubGist(clean, settings.githubGistId);
       if (res.success && res.gistId) {
-        await updateSettings({ githubToken: tokenInput.trim(), githubGistId: res.gistId });
-        setStatusMessage('Đã lưu tiến độ lên GitHub Gist thành công!');
+        await updateSettings({ githubGistId: res.gistId });
+        setStatusMessage('✅ Thành công! Đã lưu tiến độ lên GitHub Gist. Từ nay app sẽ tự động đồng bộ sau mỗi buổi học.');
       } else {
-        setStatusMessage(`Lỗi: ${res.error || 'Không thể lưu lên GitHub'}`);
+        setStatusMessage(`❌ ${res.error || 'Không thể lưu lên GitHub'}`);
       }
     } finally {
       setIsSyncing(false);
@@ -79,18 +93,19 @@ export const Settings: React.FC = () => {
   };
 
   const handleLoadGist = async () => {
-    if (!tokenInput.trim() || !settings.githubGistId) {
+    const clean = tokenInput.trim().replace(/^(Bearer|token)\s+/i, '');
+    if (!clean || !settings.githubGistId) {
       setStatusMessage('Cần có GitHub Token và Gist ID để tải về');
       return;
     }
     setIsSyncing(true);
     setStatusMessage('Đang tải dữ liệu từ GitHub Gist...');
     try {
-      const res = await downloadFromGitHubGist(tokenInput.trim(), settings.githubGistId);
+      const res = await downloadFromGitHubGist(clean, settings.githubGistId);
       if (res.success) {
-        setStatusMessage(`Đã khôi phục thành công ${res.count || 0} từ từ GitHub!`);
+        setStatusMessage(`✅ Đã khôi phục thành công ${res.count || 0} từ từ GitHub!`);
       } else {
-        setStatusMessage(`Lỗi: ${res.error || 'Không thể tải từ GitHub'}`);
+        setStatusMessage(`❌ ${res.error || 'Không thể tải từ GitHub'}`);
       }
     } finally {
       setIsSyncing(false);
@@ -207,13 +222,30 @@ export const Settings: React.FC = () => {
             Dán GitHub Token (quyền gist) để app tự động lưu tiến độ vào tài khoản GitHub của bạn vĩnh viễn.
           </p>
 
-          <input
-            type="password"
-            value={tokenInput}
-            onChange={(e) => setTokenInput(e.target.value)}
-            placeholder="Dán GitHub Personal Access Token..."
-            className="w-full px-3 py-2 rounded bg-surface border border-border text-xs text-text placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-primary"
-          />
+          <div className="flex gap-2">
+            <input
+              type="password"
+              value={tokenInput}
+              onChange={(e) => setTokenInput(e.target.value)}
+              placeholder="Dán GitHub Personal Access Token..."
+              className="flex-1 px-3 py-2 rounded bg-surface border border-border text-xs text-text placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-primary font-mono"
+            />
+            <Button
+              size="sm"
+              variant="secondary"
+              onClick={handleSaveTokenOnly}
+              className="text-xs whitespace-nowrap"
+            >
+              Lưu Token
+            </Button>
+          </div>
+
+          {settings.githubToken && (
+            <div className="text-[11px] text-ok flex items-center gap-1 font-semibold">
+              <Check size={13} />
+              <span>Token đã được lưu trong app.</span>
+            </div>
+          )}
 
           <div className="grid grid-cols-2 gap-2">
             <Button

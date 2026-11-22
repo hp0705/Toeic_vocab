@@ -7,9 +7,36 @@ export interface GistSyncResult {
   count?: number;
 }
 
+function cleanToken(token: string): string {
+  return token.trim().replace(/^(Bearer|token)\s+/i, '');
+}
+
+function getHeaders(token: string): HeadersInit {
+  return {
+    Authorization: `Bearer ${cleanToken(token)}`,
+    Accept: 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28',
+    'Content-Type': 'application/json'
+  };
+}
+
+function formatErrorMessage(status: number, rawMessage?: string): string {
+  if (status === 401) {
+    return 'Lỗi 401: Token không đúng hoặc đã bị thu hồi. Vui lòng kiểm tra lại mã Token.';
+  }
+  if (status === 403) {
+    return 'Lỗi 403: Token chưa được cấp quyền "gist". Hãy tạo lại token và tích chọn quyền "gist".';
+  }
+  if (status === 404) {
+    return 'Lỗi 404: Không tìm thấy file Gist tương ứng.';
+  }
+  return rawMessage ? `Lỗi GitHub (${status}): ${rawMessage}` : `Lỗi kết nối GitHub (${status})`;
+}
+
 export async function uploadToGitHubGist(token: string, existingGistId?: string): Promise<GistSyncResult> {
-  if (!token.trim()) {
-    return { success: false, error: 'Vui lòng nhập GitHub Token' };
+  const cToken = cleanToken(token);
+  if (!cToken) {
+    return { success: false, error: 'Vui lòng nhập GitHub Token của bạn' };
   }
 
   try {
@@ -17,13 +44,9 @@ export async function uploadToGitHubGist(token: string, existingGistId?: string)
 
     if (existingGistId) {
       // Update existing Gist
-      const res = await fetch(`https://api.github.com/gists/${existingGistId}`, {
+      const res = await fetch(`https://api.github.com/gists/${existingGistId.trim()}`, {
         method: 'PATCH',
-        headers: {
-          Authorization: `token ${token.trim()}`,
-          Accept: 'application/vnd.github+json',
-          'Content-Type': 'application/json'
-        },
+        headers: getHeaders(cToken),
         body: JSON.stringify({
           description: 'TOEIC Vocab Progress Backup (Auto-Sync)',
           files: {
@@ -36,11 +59,11 @@ export async function uploadToGitHubGist(token: string, existingGistId?: string)
 
       if (!res.ok) {
         if (res.status === 404) {
-          // Gist deleted, create a new one
+          // Gist deleted, recreate a new one
           return uploadToGitHubGist(token);
         }
         const errData = await res.json().catch(() => ({}));
-        return { success: false, error: errData.message || `Lỗi GitHub (${res.status})` };
+        return { success: false, error: formatErrorMessage(res.status, errData.message) };
       }
 
       const data = await res.json();
@@ -49,11 +72,7 @@ export async function uploadToGitHubGist(token: string, existingGistId?: string)
       // Create new secret Gist
       const res = await fetch('https://api.github.com/gists', {
         method: 'POST',
-        headers: {
-          Authorization: `token ${token.trim()}`,
-          Accept: 'application/vnd.github+json',
-          'Content-Type': 'application/json'
-        },
+        headers: getHeaders(cToken),
         body: JSON.stringify({
           description: 'TOEIC Vocab Progress Backup (Auto-Sync)',
           public: false,
@@ -67,39 +86,37 @@ export async function uploadToGitHubGist(token: string, existingGistId?: string)
 
       if (!res.ok) {
         const errData = await res.json().catch(() => ({}));
-        return { success: false, error: errData.message || `Lỗi GitHub (${res.status})` };
+        return { success: false, error: formatErrorMessage(res.status, errData.message) };
       }
 
       const data = await res.json();
       return { success: true, gistId: data.id };
     }
   } catch (err) {
-    return { success: false, error: String(err) };
+    return { success: false, error: 'Không thể kết nối đến GitHub: ' + String(err) };
   }
 }
 
 export async function downloadFromGitHubGist(token: string, gistId: string): Promise<GistSyncResult> {
-  if (!token.trim() || !gistId.trim()) {
-    return { success: false, error: 'Thiếu GitHub Token hoặc Gist ID' };
+  const cToken = cleanToken(token);
+  if (!cToken || !gistId.trim()) {
+    return { success: false, error: 'Cần có đủ GitHub Token và Gist ID để tải về' };
   }
 
   try {
     const res = await fetch(`https://api.github.com/gists/${gistId.trim()}`, {
-      headers: {
-        Authorization: `token ${token.trim()}`,
-        Accept: 'application/vnd.github+json'
-      }
+      headers: getHeaders(cToken)
     });
 
     if (!res.ok) {
       const errData = await res.json().catch(() => ({}));
-      return { success: false, error: errData.message || `Lỗi tải Gist (${res.status})` };
+      return { success: false, error: formatErrorMessage(res.status, errData.message) };
     }
 
     const data = await res.json();
     const file = data.files?.['toeic_vocab_sync.json'];
     if (!file || !file.content) {
-      return { success: false, error: 'Không tìm thấy file toeic_vocab_sync.json trong Gist' };
+      return { success: false, error: 'Không tìm thấy file toeic_vocab_sync.json trong Gist này' };
     }
 
     const importRes = await importBackup(file.content);
@@ -109,14 +126,13 @@ export async function downloadFromGitHubGist(token: string, gistId: string): Pro
 
     return { success: true, count: importRes.count, gistId };
   } catch (err) {
-    return { success: false, error: String(err) };
+    return { success: false, error: 'Lỗi tải Gist: ' + String(err) };
   }
 }
 
 export async function copySyncCodeToClipboard(): Promise<boolean> {
   try {
     const backupJson = await exportBackup();
-    // Base64 encode for easy copying
     const code = btoa(unescape(encodeURIComponent(backupJson)));
     await navigator.clipboard.writeText(code);
     return true;

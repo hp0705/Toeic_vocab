@@ -2,10 +2,16 @@ import { useState, useEffect, useCallback } from 'react';
 import { db, defaultSettings, UserStreak } from './index';
 import { CardProgress, Entry, UserSettings } from '../types/vocab';
 import { schedule, createInitialCard, Grade } from '../srs/sm2';
+import { uploadToGitHubGist } from './githubSync';
 
 function getTodayDateString(): string {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function getStartOfTodayMs(): number {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
 }
 
 export function useSettings() {
@@ -67,7 +73,7 @@ export function useStreak() {
     };
 
     if (current.lastStudiedDate === today) {
-      return; // Already completed today
+      return; // Already recorded today
     }
 
     const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
@@ -104,39 +110,65 @@ export function useStreak() {
   return { streak, hasCompletedToday, recordActivity };
 }
 
-export function useStats() {
+export interface RecentItem {
+  entry: Entry;
+  progress: CardProgress;
+}
+
+export function useStats(allEntries: Entry[]) {
   const [stats, setStats] = useState({
-    total: 0,
-    newCount: 0,
+    totalStudied: 0,
+    studiedTodayCount: 0,
     learningCount: 0,
     reviewCount: 0,
     masteredCount: 0,
-    weakCount: 0
+    weakCount: 0,
+    recentList: [] as RecentItem[]
   });
 
   const refreshStats = useCallback(async () => {
     const all = await db.progress.toArray();
+    const startOfToday = getStartOfTodayMs();
+
     let learning = 0;
     let review = 0;
     let mastered = 0;
     let weak = 0;
+    let studiedToday = 0;
 
     for (const p of all) {
       if (p.status === 'learning') learning++;
       else if (p.status === 'review') review++;
       else if (p.status === 'mastered') mastered++;
       if (p.isWeak) weak++;
+      if ((p.lastStudied || 0) >= startOfToday) studiedToday++;
+    }
+
+    // Get 8 most recently studied cards
+    const sorted = [...all]
+      .filter((p) => p.lastStudied && p.lastStudied > 0)
+      .sort((a, b) => (b.lastStudied || 0) - (a.lastStudied || 0))
+      .slice(0, 8);
+
+    const entryMap = new Map(allEntries.map((e) => [e.id, e]));
+    const recentList: RecentItem[] = [];
+    for (const p of sorted) {
+      const entry = entryMap.get(p.entryId);
+      if (entry) {
+        recentList.push({ entry, progress: p });
+      }
     }
 
     setStats({
-      total: all.length,
-      newCount: 0, // calculated relative to all entries in UI
+      totalStudied: all.length,
+      studiedTodayCount: studiedToday,
       learningCount: learning,
       reviewCount: review,
       masteredCount: mastered,
-      weakCount: weak
+      weakCount: weak,
+      recentList
     });
-  }, []);
+  }, [allEntries]);
 
   useEffect(() => {
     refreshStats();
@@ -149,7 +181,9 @@ export function useStudyQueue(allEntries: Entry[]) {
   const [queue, setQueue] = useState<Entry[]>([]);
   const [progressMap, setProgressMap] = useState<Map<string, CardProgress>>(new Map());
   const [isLoading, setIsLoading] = useState(true);
-  const { settings } = useSettings();
+  const [studiedTodayCount, setStudiedTodayCount] = useState(0);
+  const [extraNewCards, setExtraNewCards] = useState(0);
+  const { settings, updateSettings } = useSettings();
   const { recordActivity } = useStreak();
 
   const loadQueue = useCallback(async () => {
@@ -157,9 +191,14 @@ export function useStudyQueue(allEntries: Entry[]) {
     setIsLoading(true);
     try {
       const now = Date.now();
+      const startOfToday = getStartOfTodayMs();
       const allProgress = await db.progress.toArray();
       const pMap = new Map<string, CardProgress>(allProgress.map((p) => [p.entryId, p]));
       setProgressMap(pMap);
+
+      // Cards studied today
+      const studiedToday = allProgress.filter((p) => (p.lastStudied || 0) >= startOfToday);
+      setStudiedTodayCount(studiedToday.length);
 
       // 1. Cards due for review (due <= now)
       const dueCards = allProgress
@@ -170,18 +209,23 @@ export function useStudyQueue(allEntries: Entry[]) {
       const dueEntryIds = new Set(dueCards.map((p) => p.entryId));
       const dueEntries = allEntries.filter((e) => dueEntryIds.has(e.id));
 
-      // 2. New cards (no progress or status === 'new')
+      // 2. New cards for today
+      // Count new cards introduced today (reps <= 1 and lastStudied >= startOfToday)
+      const newCardsIntroducedToday = studiedToday.filter((p) => p.reps <= 1).length;
+      const targetNewCards = settings.newCardsPerDay + extraNewCards;
+      const newQuotaRemaining = Math.max(0, targetNewCards - newCardsIntroducedToday);
+
       const newEntries = allEntries
         .filter((e) => !pMap.has(e.id) || pMap.get(e.id)?.status === 'new')
-        .slice(0, settings.newCardsPerDay);
+        .slice(0, newQuotaRemaining);
 
-      // Interleave due and new
+      // Interleave due cards first, then new
       const combined = [...dueEntries, ...newEntries];
       setQueue(combined);
     } finally {
       setIsLoading(false);
     }
-  }, [allEntries, settings.maxReviewsPerDay, settings.newCardsPerDay]);
+  }, [allEntries, settings.maxReviewsPerDay, settings.newCardsPerDay, extraNewCards]);
 
   useEffect(() => {
     loadQueue();
@@ -194,10 +238,32 @@ export function useStudyQueue(allEntries: Entry[]) {
 
     await db.progress.put(updated);
     setProgressMap((prev) => new Map(prev).set(entry.id, updated));
+    setStudiedTodayCount((c) => c + 1);
     await recordActivity();
+
+    // Background auto-sync to GitHub Gist if token is set
+    if (settings.githubToken) {
+      uploadToGitHubGist(settings.githubToken, settings.githubGistId).then((res) => {
+        if (res.success && res.gistId && res.gistId !== settings.githubGistId) {
+          updateSettings({ githubGistId: res.gistId });
+        }
+      }).catch(() => {});
+    }
 
     return updated;
   };
 
-  return { queue, progressMap, isLoading, reload: loadQueue, submitGrade };
+  const addMoreNewCards = (count = 5) => {
+    setExtraNewCards((prev) => prev + count);
+  };
+
+  return {
+    queue,
+    progressMap,
+    isLoading,
+    studiedTodayCount,
+    reload: loadQueue,
+    submitGrade,
+    addMoreNewCards
+  };
 }
