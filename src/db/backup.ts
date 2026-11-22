@@ -17,7 +17,7 @@ const BackupPayloadSchema = z.object({
     .optional()
 });
 
-async function exportBackup(): Promise<string> {
+export async function exportBackup(): Promise<string> {
   const progress = await db.progress.toArray();
   const settingsRecord = await db.settings.get('user');
   const streak = await db.streak.get('current');

@@ -95,4 +95,6 @@ export interface UserSettings {
   maxReviewsPerDay: number;
   theme: 'light' | 'dark' | 'system';
   lastBackupPrompt?: number;
+  githubToken?: string;
+  githubGistId?: string;
 }
