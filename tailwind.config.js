@@ -49,6 +49,9 @@ export default {
       boxShadow: {
         card: 'var(--shadow-card)',
         sheet: 'var(--shadow-sheet)'
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif']
       }
     }
   },
