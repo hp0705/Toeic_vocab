@@ -8,6 +8,7 @@ import { useStudyQueue } from './db/hooks';
 import { STRINGS } from './constants/strings';
 
 const Library = lazy(() => import('./routes/Library').then((m) => ({ default: m.Library })));
+const Practice = lazy(() => import('./routes/Practice').then((m) => ({ default: m.Practice })));
 const Settings = lazy(() => import('./routes/Settings').then((m) => ({ default: m.Settings })));
 
 const entries = vocabData as Entry[];
@@ -28,7 +29,7 @@ export const App: React.FC = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') as NavTab;
-      if (['today', 'study', 'library', 'settings'].includes(hash)) {
+      if (['today', 'study', 'practice', 'library', 'settings'].includes(hash)) {
         setCurrentTab(hash);
       }
     };
@@ -79,6 +80,7 @@ export const App: React.FC = () => {
               setLibraryFilter(filter);
               handleSelectTab('library');
             }}
+            onOpenPractice={() => handleSelectTab('practice')}
           />
         )}
 
@@ -90,6 +92,16 @@ export const App: React.FC = () => {
             submitGrade={submitGrade}
             onFinish={() => handleSelectTab('today')}
           />
+        )}
+
+        {currentTab === 'practice' && (
+          <Suspense fallback={<div className="p-8 text-center text-xs text-text-muted">Đang tải bài tập...</div>}>
+            <Practice
+              allEntries={entries}
+              progressMap={progressMap}
+              onStartStudy={() => handleSelectTab('study')}
+            />
+          </Suspense>
         )}
 
         {currentTab === 'library' && (

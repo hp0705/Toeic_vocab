@@ -1,8 +1,8 @@
 import React from 'react';
-import { Calendar, BookOpen, Layers, Settings } from 'lucide-react';
+import { Calendar, BookOpen, Layers, Settings, Brain } from 'lucide-react';
 import { STRINGS } from '../../constants/strings';
 
-export type NavTab = 'today' | 'study' | 'library' | 'settings';
+export type NavTab = 'today' | 'study' | 'practice' | 'library' | 'settings';
 
 export interface BottomNavProps {
   currentTab: NavTab;
@@ -14,6 +14,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ currentTab, onSelectTab, d
   const tabs = [
     { id: 'today' as NavTab, label: STRINGS.nav.today, icon: Calendar },
     { id: 'study' as NavTab, label: STRINGS.nav.study, icon: BookOpen, badge: dueCount },
+    { id: 'practice' as NavTab, label: STRINGS.nav.practice, icon: Brain },
     { id: 'library' as NavTab, label: STRINGS.nav.library, icon: Layers },
     { id: 'settings' as NavTab, label: STRINGS.nav.settings, icon: Settings }
   ];

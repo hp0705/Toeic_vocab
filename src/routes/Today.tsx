@@ -14,7 +14,8 @@ import {
   PlusCircle,
   Clock,
   CloudCheck,
-  HardDrive
+  HardDrive,
+  Brain
 } from 'lucide-react';
 
 export interface TodayProps {
@@ -25,6 +26,7 @@ export interface TodayProps {
   addMoreNewCards: (count?: number) => Entry[];
   onStartStudy: () => void;
   onOpenLibraryWithFilter?: (filter: string) => void;
+  onOpenPractice?: () => void;
 }
 
 export const Today: React.FC<TodayProps> = ({
@@ -34,7 +36,8 @@ export const Today: React.FC<TodayProps> = ({
   studiedTodayCount,
   addMoreNewCards,
   onStartStudy,
-  onOpenLibraryWithFilter
+  onOpenLibraryWithFilter,
+  onOpenPractice
 }) => {
   const { streak } = useStreak();
   const { settings } = useSettings();
@@ -165,6 +168,21 @@ export const Today: React.FC<TodayProps> = ({
               </button>
             </div>
           </div>
+
+          {onOpenPractice && (
+            <div className="pt-2 border-t border-border/40">
+              <Button
+                variant="outline"
+                size="md"
+                fullWidth
+                onClick={onOpenPractice}
+                className="font-bold flex items-center justify-center gap-2 border-primary/40 text-primary hover:bg-primary-light py-2.5"
+              >
+                <Brain size={17} />
+                <span>LÀM BÀI TẬP ÔN TỪ ĐÃ HỌC</span>
+              </Button>
+            </div>
+          )}
         </div>
       </div>
 

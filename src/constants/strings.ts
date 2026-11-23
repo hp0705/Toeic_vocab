@@ -4,7 +4,8 @@ export const STRINGS = {
 
   nav: {
     today: 'Hôm nay',
-    study: 'Học',
+    study: 'Học thẻ',
+    practice: 'Bài tập',
     library: 'Thư viện',
     settings: 'Cài đặt'
   },
